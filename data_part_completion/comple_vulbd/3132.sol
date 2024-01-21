@@ -1,0 +1,5 @@
+```solidity
+number;
+    ReceiverAddressSet(addr);
+  }
+```
