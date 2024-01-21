@@ -1,0 +1,6 @@
+Primary functionality: This contract creates a custom token with the symbol "a2g" and allows users to mark their messages on the blockchain.
+
+1. mark, Allows the user to mark their message on the blockchain.
+2. totalSupply, Returns the total supply of the custom token.
+3. balanceOf, Returns the balance of a specific address.
+4. transfer, Allows the user to transfer tokens to another address.

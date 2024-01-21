@@ -1,0 +1,16 @@
+Primary functionality: This contract is a game where players can kick a coin by sending a specific amount of ether. The last player to kick the coin before a certain block number wins the accumulated ether.
+
+1. KickTheCoin, Constructor function to initialize the contract with default values and set the creator as the owner.
+2. kickTheCoin, Allows a player to kick the coin by sending the specified amount of ether and updates the game state.
+3. withdrawShares, Allows players to withdraw their shares if there is no winner and the game is active.
+4. checkShares, Returns the amount of shares a player holds.
+5. isGameActive, Checks if the game is still active based on the target block number.
+6. hasWinner, Checks if there is a winner based on the current value and game activity.
+7. getCurrentValue, Returns the current value if the game is active.
+8. getLastKicker, Returns the address of the last player to kick the coin if the game is active.
+9. pullShares, Allows a player to withdraw their shares.
+10. airDrop, Allows the airdropper to send ether to a player and keep the remaining amount.
+11. getTargetBlockNumber, Returns the target block number for the current kick.
+12. getBlocksLeftInCurrentKick, Returns the number of blocks left in the current kick.
+13. getNumberOfBlocksPerKick, Returns the number of blocks per kick.
+14. getCostToKick, Returns the cost to kick the coin.

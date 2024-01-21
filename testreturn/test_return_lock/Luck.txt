@@ -1,0 +1,5 @@
+Primary functionality: This contract allows the owner to change the luck value and keeps a history of previous luck values.
+
+1. Luck, Constructor function to set the owner of the contract.
+2. getLuck, View function to retrieve the current luck value.
+3. changeLuck, External function that allows the owner to change the luck value and stores the previous luck value in the history array.

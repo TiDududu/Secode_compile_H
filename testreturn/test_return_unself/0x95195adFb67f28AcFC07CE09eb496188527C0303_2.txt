@@ -1,0 +1,25 @@
+Primary functionality: This contract is a standard ERC223 token with additional functionalities for ownership and freezing/unfreezing of addresses and the contract itself.
+
+1. SafeMath.mul, Safely multiplies two uint256 numbers.
+2. SafeMath.div, Safely divides two uint256 numbers.
+3. SafeMath.sub, Safely subtracts one uint256 number from another.
+4. SafeMath.add, Safely adds two uint256 numbers.
+
+5. ERC223Interface.totalSupply, Retrieves the total supply of the token.
+6. ERC223Interface.balanceOf, Retrieves the balance of a specified address.
+7. ERC223Interface.transfer, Transfers tokens to a specified address.
+8. ERC223Interface.transfer, Transfers tokens to a specified address with additional data.
+9. ERC223Interface.Transfer, Event emitted upon token transfer.
+
+10. ERC223ReceivingContract.tokenFallback, Handles incoming token transfers.
+
+11. Ownership.owner, Stores the address of the contract owner.
+12. Ownership.LogOwnershipTransferred, Event emitted upon ownership transfer.
+13. Ownership.transferOwnership, Transfers ownership of the contract to a new address.
+
+14. Freezable.emergencyFreeze, Stores the emergency freeze status of the contract.
+15. Freezable.frozen, Stores the freeze status of specific addresses.
+16. Freezable.LogFreezed, Event emitted upon freezing/unfreezing of an address.
+17. Freezable.LogEmergencyFreezed, Event emitted upon emergency freezing/unfreezing of the contract.
+18. Freezable.freezeAccount, Freezes or unfreezes a specific address.
+19. Freezable.emergencyFreezeAllAccounts, Freezes or unfreezes the entire contract.

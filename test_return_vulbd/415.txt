@@ -1,0 +1,11 @@
+Primary functionality: The contract facilitates a dispute resolution mechanism using Kleros and Pinakion tokens. It allows jurors to deposit tokens, participate in dispute resolution, and withdraw their rewards.
+
+1. constructor, Initializes the contract with the Pinakion and Kleros instances, dispute details, and other parameters.
+2. receiveApproval, Receives approval from Pinakion to transfer tokens to the contract and updates the balance.
+3. withdrawJuror, Allows a juror to withdraw their rewards.
+4. withdrawSelect, Allows the contract to withdraw a specific amount for a juror and transfer it to their account.
+5. sub, Internal function to perform safe subtraction of two numbers.
+6. withdrawAttacker, Allows the attacker to withdraw remaining funds after the dispute is settled.
+7. settle, Initiates the settlement process for the dispute, redistributing rewards to jurors based on their participation in the resolution process.
+
+The contract also includes an event for logging amount shifts and other relevant information during the settlement process.

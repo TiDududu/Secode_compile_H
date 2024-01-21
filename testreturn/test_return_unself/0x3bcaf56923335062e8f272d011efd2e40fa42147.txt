@@ -1,0 +1,11 @@
+Primary functionality: The contract is a token contract with the functionality to transfer tokens, buy tokens, withdraw dividends, and check the reserve and balance.
+
+1. PonziToken, Constructor to set the owner of the contract.
+2. transferTokens, Internal function to transfer tokens from one address to another.
+3. transfer, External function to transfer tokens to a specified address.
+4. transferFrom, Function to transfer tokens from one address to another on behalf of the owner.
+5. dividends, Function to calculate the dividends for a given address.
+6. withdraw, Function to withdraw the dividends to a specified address.
+7. balance, Internal function to check the balance of the contract.
+8. reserve, Function to calculate the reserve of the contract.
+9. buy, Internal function to buy tokens with Ether, distribute fees to existing token holders, and update earnings per share.

@@ -1,0 +1,8 @@
+Primary functionality: 
+The contract is an accrual account that allows for fund transfers and tracks investments.
+
+1. changeAdmin, Allows the current admin to change to a new admin address.
+2. FundTransfer, Handles the transfer of funds based on the specified operation ("In" or "Out").
+3. fallback function, Triggers the In function when Ether is sent to the contract without specifying a function.
+4. Out, Allows investors to withdraw funds if their investment amount is greater than or equal to the target amount.
+5. In, Allows investors to deposit funds into the account, with an option to specify the recipient address.

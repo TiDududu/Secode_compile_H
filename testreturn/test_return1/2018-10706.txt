@@ -1,0 +1,10 @@
+Primary functionality: This contract is designed to handle ERC20 token functionality and includes the ability to generate and destroy tokens.
+
+1. receiveApproval, a function defined in the ApproveAndCallReceiver interface, is used to receive approval for token transfer.
+2. changeController, a function in the Controlled contract, allows the controller to be changed.
+3. transfer, a function from the ERC20Token interface, is used to transfer tokens to a specified address.
+4. transferFrom, a function from the ERC20Token interface, allows a specified address to transfer tokens on behalf of another address.
+5. approve, a function from the ERC20Token interface, is used to approve an address to spend a specified amount of tokens.
+6. approveAndCall, a function in the TokenI contract, approves an address to send tokens on behalf of the caller and triggers a function in the approved contract.
+7. generateTokens, a function in the TokenI contract, generates tokens and assigns them to a specified address.
+8. burnTokens, a function in the TokenI contract, burns a specified amount of tokens from a specified address.

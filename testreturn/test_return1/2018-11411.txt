@@ -1,0 +1,19 @@
+Primary functionality: This contract is for a custom token called DimonCoin (FUD) and includes functionalities for transferring tokens, checking balances, approving transfers, and withdrawing foreign tokens.
+
+1. name, returns the name of the token.
+2. symbol, returns the symbol of the token.
+3. decimals, returns the number of decimals used by the token.
+4. DimonCoin, constructor function to initialize the contract and set the owner's initial balance.
+5. onlyOwner, modifier to restrict access to certain functions to only the owner of the contract.
+6. transferOwnership, allows the owner to transfer ownership of the contract to a new address.
+7. getEthBalance, returns the Ether balance of a specified address.
+8. distributeFUD, allows the owner to distribute FUD tokens to multiple addresses, subject to a specified Ether balance condition.
+9. balanceOf, returns the token balance of a specified address.
+10. onlyPayloadSize, modifier to mitigate the ERC20 short address attack.
+11. transfer, allows the transfer of tokens from the sender's account to a specified address.
+12. transferFrom, allows a third party approved by the sender to transfer tokens from the sender's account to another address.
+13. approve, allows the sender to approve a third party to spend a specified amount of tokens from the sender's account.
+14. allowance, returns the amount of tokens that a spender is allowed to spend on behalf of the owner.
+15. withdrawForeignTokens, allows the owner to withdraw foreign tokens (tokens of another contract) that have been sent to this contract.
+
+The contract also includes an event for Transfer and Approval to log token transfer and approval events.

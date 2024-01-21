@@ -1,0 +1,27 @@
+Primary functionality: This contract is for an ERC20 token called ErbiumCoin with the symbol "ERB" and the name "ErbiumCoin". It includes functions to manage the token supply, balances, and transfers.
+
+1. SafeMath library functions:
+   - mul: Safely multiplies two numbers.
+   - div: Safely divides two numbers.
+   - sub: Safely subtracts one number from another.
+   - add: Safely adds two numbers.
+
+2. ERC20 interface functions:
+   - totalSupply: Returns the total supply of the token.
+   - balanceOf: Returns the balance of a specific address.
+   - allowance: Returns the amount which spender is still allowed to withdraw from owner.
+   - transferFrom: Transfers tokens from one address to another.
+   - approve: Approves the passed address to spend the specified amount of tokens on behalf of the owner.
+   - transfer: Transfers tokens to a specified address.
+
+3. ERBIUMCOIN contract functions:
+   - ERBIUMCOIN: Constructor function to initialize the contract owner and allocate initial tokens to the owner.
+   - mineToken: Allows the owner to increase the token supply after a review period.
+   - totalSupply: Returns the total supply of the tokens.
+   - balanceOf: Returns the balance of a particular account.
+   - transfer: Transfers tokens from the sender's account to another account.
+
+4. Fallback function:
+   - Allows the contract to accept Ether.
+
+The contract also includes modifiers and events for ownership control and logging.

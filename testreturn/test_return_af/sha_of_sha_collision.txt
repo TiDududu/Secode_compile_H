@@ -1,0 +1,6 @@
+Primary functionality: This contract is designed to store and retrieve values using a mapping with keccak256 hashed keys.
+
+1. set, This function takes a uint input and stores the value 1 in the mapping m with the key as the keccak256 hash of the concatenation of "A" and the input uint.
+2. check, This function takes a uint input and checks if the value stored in the mapping m with the key as the keccak256 hash of the concatenation of the input uint and "B" is equal to 0. If it is not, the function will trigger an assert violation.
+
+The primary functionality is to store values in the mapping using keccak256 hashed keys and to check the absence of a specific value using a different key.

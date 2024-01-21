@@ -1,0 +1,10 @@
+Primary functionality: This contract implements a basic ERC20 token with the ability to transfer tokens, approve spending, and transfer tokens on behalf of another address.
+
+1. owned, Constructor function to set the owner of the contract;
+2. transferOwnership, Allows the current owner to transfer ownership to a new address;
+3. TokenERC20, Constructor function to initialize the token with initial supply, name, and symbol;
+4. _transfer, Internal function to transfer tokens between addresses;
+5. transfer, Allows the sender to transfer tokens to a specified address;
+6. transferFrom, Allows a designated address to transfer tokens on behalf of another address;
+7. approve, Allows the owner to approve another address to spend a specified amount of tokens;
+8. receiveApproval, Interface function to receive approval and additional data.

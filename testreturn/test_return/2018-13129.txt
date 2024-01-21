@@ -1,0 +1,14 @@
+Primary functionality: This contract is for managing ERC20 tokens, which are a standard interface for fungible tokens on the Ethereum blockchain.
+
+1. SafeMath.mul, Safe multiplication with safety checks;
+2. SafeMath.div, Safe division with safety checks;
+3. SafeMath.sub, Safe subtraction with safety checks;
+4. SafeMath.add, Safe addition with safety checks;
+5. ERC20Basic.totalSupply, Retrieves the total supply of tokens;
+6. ERC20Basic.balanceOf, Retrieves the token balance of a given address;
+7. ERC20Basic.transfer, Transfers tokens from the sender's address to a specified address;
+8. BasicToken.transfer, Transfers tokens from the sender's address to a specified address;
+9. BasicToken.balanceOf, Retrieves the token balance of a given address;
+10. ERC20.allowance, Retrieves the amount of tokens that the spender is allowed to transfer from the owner;
+11. ERC20.transferFrom, Transfers tokens on behalf of another address;
+12. ERC20.approve, Approves a specified address to spend a specified amount of tokens on behalf of the owner.

@@ -1,0 +1,23 @@
+Primary functionality: This contract is for the "Extreme Coin" (XT) and includes functionalities for transferring tokens, checking balances, and managing allowances for spending tokens.
+
+1. SafeMath.mul, Safely multiplies two numbers.
+2. SafeMath.div, Safely divides two numbers.
+3. SafeMath.sub, Safely subtracts one number from another.
+4. SafeMath.add, Safely adds two numbers.
+5. SafeMath.max64, Returns the larger of two numbers (uint64).
+6. SafeMath.min64, Returns the smaller of two numbers (uint64).
+7. SafeMath.max256, Returns the larger of two numbers (uint256).
+8. SafeMath.min256, Returns the smaller of two numbers (uint256).
+9. Ownable, Constructor to set the contract owner and modifier to restrict access to only the owner.
+10. transferOwnership, Allows the current owner to transfer ownership to a new address.
+11. ERC20Basic, Interface for ERC20 token standard with functions for balance retrieval and transfer.
+12. ERC20, Interface for ERC20 token standard with additional functions for allowance and transferFrom.
+13. newToken, Implements ERC20Basic with additional functionality for transferring tokens and checking balances.
+14. onlyPayloadSize, Modifier to check the size of the transaction payload.
+15. transfer, Function to transfer tokens from the sender's account to a specified address.
+16. balanceOf, Function to retrieve the token balance of a specified address.
+17. StandardToken, Extends newToken and ERC20 to add functionality for allowance and transferFrom.
+18. transferFrom, Function to transfer tokens from a specified address to another address with approval.
+19. approve, Function to approve an address to spend a specified amount of tokens from the caller's address.
+20. allowance, Function to check the remaining allowance of tokens for a spender from an owner's address.
+21. Extreme, Extends StandardToken and Ownable to define the "Extreme Coin" with a specific name, symbol, decimals, and initial supply in the constructor.

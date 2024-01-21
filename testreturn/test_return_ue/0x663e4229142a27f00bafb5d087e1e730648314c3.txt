@@ -1,0 +1,34 @@
+Primary functionality: This contract is a combination of multiple ERC standards (ERC20, ERC721) and includes access control functionality.
+
+1. ERC20 functions:
+   - totalSupply(): Returns the total supply of tokens.
+   - balanceOf(address who): Returns the balance of the specified address.
+   - allowance(address owner, address spender): Returns the amount which spender is still allowed to withdraw from owner.
+   - transfer(address to, uint value): Transfers tokens from the sender's address to the specified address.
+   - transferFrom(address from, address to, uint value): Transfers tokens on behalf of the owner.
+   - approve(address spender, uint value): Approves the specified address to spend the specified amount of tokens on behalf of the owner.
+
+2. Ownable functions:
+   - Ownable(): Constructor to set the contract owner as the sender.
+   - onlyOwner modifier: Restricts functions to be called only by the owner.
+   - transferOwnership(address newOwner): Allows the current owner to transfer control of the contract to a new owner.
+
+3. ERC721 functions:
+   - totalSupply(): Returns the total count of tokens.
+   - balanceOf(address _owner): Returns the balance of tokens owned by the specified address.
+   - ownerOf(uint256 _tokenId): Returns the owner of the specified token.
+   - approve(address _to, uint256 _tokenId): Approves the specified address to take ownership of the token.
+   - transfer(address _to, uint256 _tokenId): Transfers the ownership of the token to the specified address.
+   - transferFrom(address _from, address _to, uint256 _tokenId): Transfers the ownership of the token from one address to another.
+
+4. GeneScienceInterface functions:
+   - isGeneScience(): Indicates if the contract is the expected gene science contract.
+   - mixGenes(uint256[2] genes1, uint256[2] genes2, uint256 g1, uint256 g2, uint256 targetBlock): Combines genes of two parents to produce a child's genes.
+   - getPureFromGene(uint256[2] gene): Returns the pure gene from the given gene.
+   - getSex(uint256[2] gene): Returns the sex (0 for female, 1 for male) from the given gene.
+   - getWizzType(uint256[2] gene): Returns the wizz type from the given gene.
+   - clearWizzType(uint256[2] _gene): Clears the wizz type from the given gene.
+
+5. PandaAccessControl: Manages special access privileges for CryptoPandas.
+
+Note: The contract also includes events for Transfer and Approval in ERC20 and ERC721 standards.

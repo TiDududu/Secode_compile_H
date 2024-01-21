@@ -1,0 +1,14 @@
+Primary functionality: Manage a presale pool for token distribution.
+
+1. SafeMath.mul, Safely multiply two unsigned integers.
+2. SafeMath.sub, Safely subtract two unsigned integers.
+3. SafeMath.add, Safely add two unsigned integers.
+4. balanceOf, Check the balance of a specific address.
+5. transfer, Transfer tokens to a specified address.
+6. isPaidUntil, Check if an address has paid until a certain time.
+7. PresalePool, Initialize the presale pool with specified parameters.
+8. fallback function, Handle incoming Ether deposits or refunds.
+9. _ethDeposit, Handle Ether deposits during the presale stage.
+10. _ethRefund, Handle Ether refunds after the presale stage.
+
+The contract includes SafeMath library for safe arithmetic operations, interfaces for ERC20 and WhiteList contracts, and various internal functions for managing the presale pool, including handling Ether deposits and refunds.

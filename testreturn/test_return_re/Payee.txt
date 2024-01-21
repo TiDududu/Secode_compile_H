@@ -1,0 +1,20 @@
+Primary functionality: The contract consists of two main contracts, Storage and Payee. The Storage contract is used to store data and manage admin privileges, while the Payee contract facilitates payments and handles the pricing logic.
+
+Storage contract:
+1. Storage: Constructor function to initialize the founder, set founder as admin, and enable changeable status.
+2. update: Allows an admin to update the data for a specific user address.
+3. set: Allows an admin to set the data for a specific user address.
+4. admin: Allows the founder to toggle admin status for a given address.
+5. halt: Allows the founder to toggle the changeable status.
+6. fallback function: Reverts any incoming transactions.
+
+Payee contract:
+1. Payee: Constructor function to set the founder, default price, founder as admin, storage address, and enable changeable status.
+2. setPrice: Allows an admin to set the price for the product.
+3. setStorageAddress: Allows an admin to set the storage address.
+4. admin: Allows the founder to toggle admin status for a given address.
+5. halt: Allows the founder to toggle the changeable status.
+6. pay: Allows users to make payments for a specific product, updating the storage and emitting a Buy event.
+7. fallback function: Allows users to make payments for a single product.
+
+The primary functionality is to manage data storage and admin privileges in the Storage contract, while the Payee contract facilitates payments and handles pricing logic.

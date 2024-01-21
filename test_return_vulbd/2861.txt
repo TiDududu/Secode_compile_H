@@ -1,0 +1,26 @@
+Primary functionality: The contract implements ERC20 token standard functionalities along with additional features for token minting and burning.
+
+1. SafeMath.mul, Safely multiplies two numbers and returns the result.
+2. SafeMath.div, Safely divides two numbers and returns the result.
+3. SafeMath.sub, Safely subtracts one number from another and returns the result.
+4. SafeMath.add, Safely adds two numbers and returns the result.
+
+5. ERC20Basic.totalSupply, Returns the total supply of tokens.
+6. ERC20Basic.balanceOf, Returns the token balance of the specified address.
+7. ERC20Basic.transfer, Transfers tokens from the sender's address to the specified address.
+8. ERC20Basic.allowance, Returns the amount of tokens that an owner has allowed a spender to spend.
+9. ERC20Basic.transferFrom, Allows a spender to transfer tokens from the specified address to another address.
+10. ERC20Basic.approve, Allows the owner to approve a spender to spend a specified amount of tokens.
+
+11. Ownable, A contract that sets the owner of the contract and allows transferring ownership to a new address.
+
+12. StandardToken, Implements the ERC20 token standard with additional functionalities:
+    - transfer: Transfers tokens from the sender's address to the specified address.
+    - batchTransfer: Transfers tokens in batches to multiple addresses.
+    - balanceOf: Returns the token balance of the specified address.
+    - transferFrom: Allows a spender to transfer tokens from the specified address to another address.
+    - approve: Allows the owner to approve a spender to spend a specified amount of tokens.
+    
+13. BurnableToken, Extends StandardToken and adds the functionality to burn a specific amount of tokens.
+
+14. MintableToken, Inherits from the previous contracts and is expected to include the functionality for minting new tokens, which is not provided in the given code snippet.

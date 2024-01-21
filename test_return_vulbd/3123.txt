@@ -1,0 +1,8 @@
+Primary functionality: This code defines several contracts for managing a token sale and a token. The main functionalities are as follows:
+1. Owned, Constructor: Sets the initial owner of the contract.
+2. Owned, replaceOwner: Allows the current owner to transfer ownership to a new address.
+3. Owned, isOwner: Checks if the caller is the owner of the contract.
+4. SafeMath, add/sub/mul/div/pow: Library for safe mathematical operations.
+5. TokenDB, transfer/bulkTransfer/setAllowance/getAllowance/balanceOf: Manages token transfers and allowances.
+6. Token, changeLibAddress/changeDBAddress/changeIcoAddress/approve/transfer/bulkTransfer/transferFrom/allowance/balanceOf: Manages token-related functionalities and events.
+7. Ico, phaseType/vesting_s/currentPhase/currentRate/KYC/transferRight/vesting: Manages the ICO phases, vesting, rates, KYC, and transfer rights.

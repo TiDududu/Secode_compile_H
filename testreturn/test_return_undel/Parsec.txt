@@ -1,0 +1,6 @@
+Primary functionality: This contract serves as a proxy for invoking functions implemented in the controller contract. It also allows for the transfer of ownership and delegation of the contract.
+
+1. delegatedFwd, Performs a delegatecall and returns whatever the delegatecall returned.
+2. transferDelegation, Allows the owner to transfer delegation of the contract to a new address.
+3. transferOwnership, Allows the current owner to transfer control of the contract to a new owner.
+4. initialize, Function to initialize storage of the proxy and set the owner and delegation addresses.

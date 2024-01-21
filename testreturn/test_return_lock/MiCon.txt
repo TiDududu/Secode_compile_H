@@ -1,0 +1,6 @@
+Primary functionality: This contract is for a custom cryptocurrency called MiCon.
+
+1. MyCoin, This function sets the owner of the contract to the address of the sender.
+2. mint, This function allows the owner to mint new tokens and assign them to a specified investor's address.
+3. buy, This function allows users to buy tokens by sending ether to the contract.
+4. transfer, This function allows users to transfer tokens to another address. It checks if the sender has enough tokens and then transfers the specified amount to the recipient's address.

@@ -1,0 +1,7 @@
+Primary functionality: This Solidity contract implements an ERC20 token standard, including basic token functionality, and SafeMath library for secure arithmetic operations.
+
+1. transfer, transfers tokens from the sender's address to a specified address.
+2. balanceOf, retrieves the balance of a specified address.
+3. allowance, retrieves the amount that an owner allowed to be spent by a spender.
+4. transferFrom, transfers tokens from one address to another, with an allowance mechanism.
+5. approve, allows a spender to withdraw funds from the owner.

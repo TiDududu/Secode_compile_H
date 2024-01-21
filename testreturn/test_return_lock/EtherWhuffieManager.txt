@@ -1,0 +1,4 @@
+Primary functionality: Manage positive and negative Whuffies and track their distribution.
+
+1. sendPositiveWhuffies, allows sending positive Whuffies to a specified address along with a message. It increments the positiveWhuffies count for the recipient and emits a PositiveWhuffiesSent event.
+2. sendNegativeWhuffies, allows sending negative Whuffies to a specified address along with a message. It increments the negativeWhuffies count for the recipient and emits a NegativeWhuffiesSent event.

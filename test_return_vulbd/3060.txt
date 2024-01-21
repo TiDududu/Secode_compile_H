@@ -1,0 +1,24 @@
+Primary functionality: The contract allows for the locking and releasing of ERC20 tokens based on predefined conditions.
+
+1. Ownable, Constructor: Sets the contract deployer as the owner.
+2. Ownable, onlyOwner: Modifier to restrict access to only the owner of the contract.
+3. Ownable, renounceOwnership: Allows the owner to renounce their ownership.
+4. Ownable, transferOwnership: Allows the owner to transfer ownership to a new address.
+5. Ownable, _transferOwnership: Internal function to transfer ownership to a new address.
+6. ERC20Basic, totalSupply: Returns the total supply of the ERC20 token.
+7. ERC20Basic, balanceOf: Returns the balance of the specified address.
+8. ERC20Basic, transfer: Transfers tokens from the sender's address to the specified address.
+9. ERC20, allowance: Returns the amount which the spender is still allowed to withdraw from the owner.
+10. ERC20, transferFrom: Transfers tokens from one address to another.
+11. ERC20, approve: Allows the owner to approve the spender to transfer a specified amount of tokens.
+12. MultiOwnable, addOwner: Allows the current owner to add a new owner.
+13. MultiOwnable, removeOwner: Allows the current owner to remove an existing owner.
+14. MultiOwnable, transferOwnership: Allows the current owner to transfer ownership to a new address.
+15. MultiOwnable, isOwner: Checks if the specified address is an owner.
+16. TokenLock, constructor: Initializes the TokenLock contract with the specified ERC20 token address.
+17. TokenLock, getLockAmount: Returns the locked amount for the specified address.
+18. TokenLock, getReleaseBlock: Returns the release block for the specified address.
+19. TokenLock, lock: Allows owners to lock a specified amount of tokens for a specified address until a release block.
+20. TokenLock, release: Allows owners or the specified address to release the locked tokens after the release block is reached.
+21. TokenLockDistribute, constructor: Initializes the TokenLockDistribute contract with the specified ERC20 token and TokenLock contract addresses.
+22. TokenLockDistribute, distribute: Allows the owner to distribute tokens to multiple addresses based on the locking conditions set in the TokenLock contract.

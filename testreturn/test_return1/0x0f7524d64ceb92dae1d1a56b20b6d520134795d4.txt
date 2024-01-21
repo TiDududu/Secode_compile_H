@@ -1,0 +1,14 @@
+Primary functionality: This contract is a token system with a buy/sell mechanism and a withdrawal function.
+
+1. balanceOf, Returns the balance of the specified address.
+2. withdraw, Allows the user to withdraw their dividends.
+3. sellMyTokensDaddy, Sells the tokens of the caller.
+4. getMeOutOfHere, Initiates the selling of the caller's tokens and then withdraws the dividends.
+5. fund, Allows users to fund the contract by buying tokens with Ether.
+6. buyPrice, Returns the price in Ether to buy tokens.
+7. sellPrice, Returns the price in Ether to sell tokens.
+8. transferTokens, Internal function to transfer tokens between addresses.
+9. transfer, Allows the caller to transfer tokens to a specified address.
+10. transferFrom, Allows a third party to transfer tokens from one address to another, given approval.
+
+The contract also includes several comments explaining the invariants and calculations used in the contract.

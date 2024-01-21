@@ -1,0 +1,17 @@
+Primary functionality: The contract is a standard ERC20 token with additional functionalities for transferring ownership, destroying the contract, transferring Ether balance to the owner, depositing Ether to the contract, transferring token balance to the owner, and freezing accounts.
+
+1. transferOwner, Transfer the owner of the contract to another user.
+2. destoryContract, Destroy the contract and transfer the remaining balance to the specified recipient.
+3. transferEtherToOwner, Transfer Ether balance to the owner from the contract's account.
+4. depositEtherToContract, Deposit Ether to the contract's account.
+5. transferTokenToOwner, Transfer token balance to the owner from the contract's account.
+6. freezeAccount, Freeze the specified address to prevent transfers.
+7. freezeAmount, Freeze or unfreeze a specific amount for the specified address.
+8. transfer, Transfer tokens from the sender's address to the specified recipient.
+9. approve, Approve the specified address to spend the specified amount of tokens on behalf of the owner.
+10. transferFrom, Transfer tokens from one address to another, with approval.
+11. balanceOf, Get the token balance of the specified address.
+12. allowance, Get the amount of tokens that the specified address is allowed to spend on behalf of the owner.
+13. burn, Burn a specific amount of tokens from the specified address.
+
+Note: The contract contains vulnerabilities such as <LEAKING_VUL>, <SUICIDAL_VUL>, and <REENTRANCY_VUL>.

@@ -1,0 +1,23 @@
+Primary functionality: This contract implements a token with the functionality of transferring tokens, approving token transfers, checking allowances, and enabling/disabling token purchasing.
+
+1. SafeMath library functions:
+   - mul: Safely multiplies two uint256 numbers.
+   - div: Safely divides two uint256 numbers.
+   - sub: Safely subtracts one uint256 number from another.
+   - add: Safely adds two uint256 numbers.
+
+2. ForeignToken contract: Interface for an external token contract with functions to check balance and transfer tokens.
+
+3. Virgo_ZodiacToken contract:
+   - Initializes various state variables including owner, purchasingAllowed, totalContribution, totalBonusTokensIssued, MINfinney, AIRDROPBounce, ICORatio, and totalSupply.
+   - Implements name, symbol, and decimals functions to return token details.
+   - Defines Burnt event and sub function for internal subtraction.
+   - Implements balanceOf function to check the token balance of an address.
+   - Implements transfer function to transfer tokens to a specified address.
+   - Implements transferFrom function to transfer tokens on behalf of another address.
+   - Implements approve function to approve a specific address to spend tokens on behalf of the owner.
+   - Implements allowance function to check the amount of tokens that an owner allowed to a spender.
+   - Defines Transfer, Approval, and Burn events.
+   - Implements enablePurchasing function to allow the owner to enable token purchasing.
+
+The primary functionality is to create and manage an ERC20-compliant token (Virgo_ZodiacToken) with the ability to transfer tokens, approve token transfers, check allowances, and enable/disable token purchasing.

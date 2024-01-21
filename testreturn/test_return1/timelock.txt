@@ -1,0 +1,5 @@
+Primary functionality: This contract allows users to deposit ether into their account, which becomes locked for a specific period of time. Users can increase the lock time and withdraw their funds after the lock time has passed.
+
+1. deposit, Allows users to deposit ether into their account and sets a lock time of 1 week from the current time.
+2. increaseLockTime, Allows users to increase the lock time for their deposited funds by a specified number of seconds.
+3. withdraw, Allows users to withdraw their funds after the lock time has passed, transferring the balance to the user's address.

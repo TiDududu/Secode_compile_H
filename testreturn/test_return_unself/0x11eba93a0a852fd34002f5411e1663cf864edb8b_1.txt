@@ -1,0 +1,35 @@
+Primary functionality: The contract is a collection of various functionalities including SafeMath library for safe mathematical operations, Ownable contract for ownership management, CircuitBreaker contract for managing a circuit breaker pattern, ERC20Interface and ERC20 contracts for ERC20 token implementation, ITokenRecipient contract for token purchasing, ExternalContractPayment contract for approving token purchase from an external contract, and MintableToken contract for minting new tokens.
+
+1. SafeMath library:
+   - mul: Safely multiplies two uint256 numbers and prevents overflow.
+   - div: Safely divides two uint256 numbers and prevents division by zero.
+   - sub: Safely subtracts two uint256 numbers and prevents underflow.
+   - add: Safely adds two uint256 numbers and prevents overflow.
+
+2. Ownable contract:
+   - constructor: Initializes the owner with the deployer's address.
+   - onlyOwner modifier: Restricts access to functions to only the owner.
+   - transferOwnership: Allows the owner to transfer ownership to a new address.
+   - acceptOwnership: Allows the potential new owner to accept the ownership transfer.
+
+3. CircuitBreaker contract:
+   - constructor: Initializes the contract with the inLockdown state as false.
+   - outOfLockdown modifier: Restricts access to functions when inLockdown is true.
+   - updateLockdownState: Allows the owner to update the lockdown state.
+
+4. ERC20Interface:
+   - Defines the interface for ERC20 token standard including balanceOf, transfer, transferFrom, approve, allowance, and related events.
+
+5. ERC20 contract:
+   - Implements the ERC20Interface and SafeMath library for ERC20 token functionality including balanceOf, transfer, transferFrom, approve, and allowance.
+
+6. ITokenRecipient contract:
+   - Defines a function buyTokenWithMorality to buy tokens with morality.
+
+7. ExternalContractPayment contract:
+   - Inherits from ERC20 and allows approving token purchase from an external contract using approveTokenPurchase function.
+
+8. MintableToken contract:
+   - Inherits from ERC20 and includes functionality for minting new tokens.
+
+The contract is designed to provide a comprehensive ERC20 token functionality with additional features for ownership management, circuit breaker pattern, and token purchasing from external contracts.

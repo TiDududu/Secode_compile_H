@@ -1,0 +1,10 @@
+Primary functionality: This contract defines an ERC20Basic interface and a DateTime library.
+
+1. totalSupply, a function that returns the total supply of tokens.
+2. balanceOf, a function that returns the balance of a specified address.
+3. transfer, a function that transfers a specified amount of tokens to a specified address and returns a boolean value indicating success.
+4. isLeapYear, an internal function that checks if a given year is a leap year.
+5. leapYearsBefore, an internal function that calculates the number of leap years before a given year.
+6. getDaysInMonth, an internal function that returns the number of days in a month for a given year.
+7. parseTimestamp, an internal function that converts a timestamp to a MyDateTime struct.
+8. getYear, an internal function that returns the year from a given timestamp.

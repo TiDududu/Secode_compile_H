@@ -1,0 +1,16 @@
+Primary functionality: This contract is a multi-token interface that allows for bundling and unbundling of multiple ERC20 tokens.
+
+1. tokensCount, returns the count of tokens in the multi-token.
+2. tokens, returns the ERC20 token at the specified index.
+3. allTokens, returns an array of all ERC20 tokens in the multi-token.
+4. allDecimals, returns an array of decimals for all tokens in the multi-token.
+5. allBalances, returns an array of balances for all tokens in the multi-token.
+6. allTokensDecimalsBalances, returns arrays of all tokens, decimals, and balances in the multi-token.
+7. bundleFirstTokens, bundles the specified token amounts for the beneficiary.
+8. bundle, bundles tokens for the beneficiary.
+9. unbundle, unbundles tokens for the beneficiary.
+10. unbundleSome, unbundles specific tokens for the beneficiary.
+11. getReturn, returns the amount of tokens that will be returned in a conversion.
+12. change, changes tokens from one type to another.
+13. allWeights, returns an array of weights for all tokens in the multi-token.
+14. allTokensDecimalsBalancesWeights, returns arrays of all tokens, decimals, balances, and weights in the multi-token.

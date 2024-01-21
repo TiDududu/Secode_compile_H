@@ -1,0 +1,3 @@
+Primary functionality: This contract contains a function to delegate a call to another contract and trigger self-destruct.
+
+1. delegatecall_selfdestruct, This function takes an address as input and uses delegatecall to call the contract at the given address. It then triggers self-destruct on the current contract.

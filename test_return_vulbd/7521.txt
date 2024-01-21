@@ -1,0 +1,17 @@
+Primary functionality: This contract is a vesting contract that locks up a certain amount of ERC20 tokens and gradually releases them to the beneficiary over a specified duration.
+
+1. mul, Safely multiplies two uint256 numbers, preventing overflow.
+2. div, Safely divides two uint256 numbers.
+3. sub, Safely subtracts one uint256 number from another, ensuring the result is not negative.
+4. add, Safely adds two uint256 numbers, preventing overflow.
+
+5. totalSupply, Returns the total supply of the ERC20 token.
+6. balanceOf, Returns the balance of the specified address.
+7. transfer, Transfers a specified amount of tokens to the given address.
+
+8. safeTransfer, Safely transfers a specified amount of ERC20 tokens to the given address.
+
+9. release, Releases the vested amount of tokens to the beneficiary.
+10. releasableAmount, Returns the amount of tokens that can be released at the current time.
+11. vestedAmount, Returns the total vested amount of tokens based on the current time and duration.
+12. fallback function, Rejects any incoming Ether by reverting the transaction.

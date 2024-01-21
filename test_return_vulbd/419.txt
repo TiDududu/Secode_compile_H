@@ -1,0 +1,13 @@
+Primary functionality: The contract is a token contract that allows for the transfer of a custom token, SnooKarma (SNK), between addresses. It also includes functionality for redeeming karma and managing ownership and oracle addresses.
+
+1. transfer, Allows the sender to transfer a specified amount of SNK tokens to a specified destination address.
+2. transferFrom, Allows a designated spender to transfer a specified amount of SNK tokens from a specified source address to a specified destination address.
+3. approve, Allows the owner to approve a designated spender to transfer a specified amount of SNK tokens on their behalf.
+4. safeAdd, Internal function to safely add two unsigned integers, preventing overflow.
+5. onlyBy, Modifier to restrict access to functions based on the calling address.
+6. transferOwnership, Allows the current owner to transfer ownership of the contract to a new address.
+7. changeOracle, Allows the owner to change the oracle address.
+8. removeOracle, Allows the owner to remove the oracle address.
+9. changeMaintainer, Allows the owner to change the maintainer address.
+10. redeem, Allows users to redeem karma by providing a signature and verifying the oracle's signature, and then updating the balances accordingly.
+11. redeemedKarmaOf, Allows users to view the redeemed karma for a specific username.

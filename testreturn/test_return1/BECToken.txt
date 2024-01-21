@@ -1,0 +1,10 @@
+Primary functionality: This contract is an implementation of a standard ERC20 token with basic functionalities such as transferring tokens, checking balances, and approving token transfers.
+
+1. SafeMath.mul, Safely multiply two numbers;
+2. SafeMath.div, Safely divide two numbers;
+3. SafeMath.sub, Safely subtract two numbers;
+4. SafeMath.add, Safely add two numbers;
+5. transfer, Transfer tokens to a specified address;
+6. balanceOf, Get the balance of a specified address;
+7. transferFrom, Transfer tokens from one address to another;
+8. approve, Approve the passed address to spend the specified amount of tokens on behalf of the message sender.

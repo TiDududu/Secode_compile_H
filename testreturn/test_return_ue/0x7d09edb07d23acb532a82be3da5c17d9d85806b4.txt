@@ -1,0 +1,11 @@
+Primary functionality: The contract is a simple game where players can wager a bet, play the game, and potentially win or lose ETH. It also allows for donations to a designated address.
+
+1. onlyOwner, Restricts access to functions to only the contract owner.
+2. isOpenToPublic, Ensures that certain functions are accessible only when the game is open to the public.
+3. onlyRealPeople, Ensures that transactions are initiated by externally owned accounts.
+4. onlyPlayers, Ensures that only players with active wagers can access certain functions.
+5. Wager, Allows players to place a bet of a specified amount.
+6. play, Determines winners and losers based on a random number generation algorithm.
+7. donate, Allows users to donate ETH to a designated address.
+8. payout, Transfers ETH to the winner of the game.
+9. donateToWhale, Transfers donated ETH to a designated address.

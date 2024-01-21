@@ -1,0 +1,12 @@
+Primary functionality: Create and distribute QPay tokens.
+
+1. mul, Safe math multiplication function;
+2. div, Safe math division function;
+3. sub, Safe math subtraction function;
+4. add, Safe math addition function;
+5. QPay, Constructor function to initialize the contract;
+6. SetupQPY, Set up the QPY contract;
+7. Transfer, Transfer tokens between addresses;
+8. Approval, Approve the use of the token by another address;
+9. Burn, Burn tokens;
+10. onlyOwner, Modifier to restrict access to the owner of the contract.

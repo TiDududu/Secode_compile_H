@@ -1,0 +1,5 @@
+Primary functionality: Execute a trade using delegatecall.
+
+1. EDProxy, Constructor function that initializes the contract.
+2. dtrade, Executes a trade using delegatecall by passing various parameters to the specified _callee contract.
+3. testcall, Sets up the parameters for a trade and then calls the dtrade function to execute the trade using delegatecall.

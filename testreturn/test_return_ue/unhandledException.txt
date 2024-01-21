@@ -1,0 +1,5 @@
+Primary functionality: This contract is a simple bank contract that allows users to deposit and withdraw funds, and the bank owner to refund all users.
+
+1. deposit, Allows users to deposit funds into their account in the bank.
+2. withdraw, Allows users to withdraw a specified amount of funds from their account in the bank.
+3. refundAll, Allows the bank owner to refund all users by transferring the funds back to their respective addresses.

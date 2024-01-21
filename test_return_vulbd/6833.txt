@@ -1,0 +1,25 @@
+Primary functionality: This contract is for a token called MOE. It includes functionalities for transferring tokens, managing ownership, stopping and starting token transfers, and locking/unlocking token transfers for specific addresses.
+
+1. SafeMath.mul, Safely multiplies two numbers and prevents overflow.
+2. SafeMath.div, Safely divides two numbers and prevents division by zero.
+3. SafeMath.sub, Safely subtracts one number from another and prevents underflow.
+4. SafeMath.add, Safely adds two numbers and prevents overflow.
+
+5. ERC20Basic.balanceOf, Returns the balance of a specified address.
+6. ERC20Basic.transfer, Transfers tokens to a specified address.
+
+7. ERC20.allowance, Returns the amount which spender is still allowed to withdraw from owner.
+8. ERC20.transferFrom, Transfers tokens from one address to another.
+9. ERC20.approve, Allows the spender to withdraw from the owner multiple times, up to the value amount.
+
+10. MOEToken, Constructor function to initialize the contract with an initial supply and set the owner.
+11. stop, Stops token transfers.
+12. start, Resumes token transfers.
+13. lockTime, Sets a lock time for a specific address.
+14. lockOf, Returns the lock time for a specific address.
+15. transferOwnership, Transfers ownership of the contract to a new owner.
+16. fallback function, Allows the contract to receive Ether and logs the transfer.
+
+17. balanceOf, Returns the balance of a specified address.
+18. transfer, Transfers tokens to a specified address, with the added functionality of checking if the sender is stopped and if the sender is locked.
+19. transferFrom, Transfers tokens from one address to another, with the added functionality of checking if the sender is stopped and if the sender is locked.

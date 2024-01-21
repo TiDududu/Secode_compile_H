@@ -1,0 +1,19 @@
+Primary functionality: The contract implements an ERC721 token with basic ownership and transfer functionalities, along with the ability to pause and unpause the contract.
+
+1. SafeMath.mul, Safely multiplies two numbers, preventing overflow.
+2. SafeMath.div, Safely divides two numbers, preventing division by zero.
+3. SafeMath.sub, Safely subtracts one number from another, preventing underflow.
+4. SafeMath.add, Safely adds two numbers, preventing overflow.
+5. AddressUtils.isContract, Checks if the given address is a contract.
+6. Ownable, Manages ownership and admin privileges of the contract.
+7. Ownable.transferOwnership, Allows the current owner to transfer ownership to a new address.
+8. Ownable.setAdmin, Allows the current owner to set a new admin address.
+9. Pausable, Allows the contract to be paused and unpaused.
+10. Pausable.pause, Allows the owner to pause the contract.
+11. Pausable.unpause, Allows the owner to unpause the contract.
+12. BrokenContract, Inherits from Pausable and contains a function to set a new contract address.
+13. ERC721Basic, Defines basic ERC721 token functions for balance, ownership, and existence checks.
+14. ERC721Enumerable, Extends ERC721Basic and adds functions for enumerating tokens.
+15. ERC721Metadata, Extends ERC721Basic and adds functions for retrieving metadata like name and symbol.
+16. ERC721, Implements ERC721Basic, ERC721Enumerable, and ERC721Metadata.
+17. ERC721BasicToken, Inherits from BrokenContract and ERC721Basic, implements ERC721 token functionalities like balanceOf, ownerOf, and existence checks.

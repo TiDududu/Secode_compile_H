@@ -1,0 +1,8 @@
+Primary functionality: Transfer tokens from one address to another
+
+1. transferOwnership, Transfers ownership of the smart contract.
+2. receiveApproval, Receives approval for a token transfer.
+3. TokenERC20, Initializes a token with initial supply and public variables, such as name, symbol, and decimals.
+4. _transfer, Performs an internal transfer of tokens between addresses. Prevents transfer to the 0x0 address, checks if the sender has enough balance, and checks for overflows before updating the sender and recipient balances. Fires a Transfer event and ensures balances are updated correctly.
+5. transfer, Allows the sender to transfer tokens to another address.
+6. transferFrom, Allows a sender to transfer tokens from another address.

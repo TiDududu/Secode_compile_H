@@ -1,0 +1,8 @@
+Primary functionality: The contract serves as a digital coin with the name "ÊýÂëÁ´" and the symbol "SML". It implements functionality for transferring tokens, withdrawing dividends, and purchasing tokens.
+
+1. transfer, allows the transfer of tokens from the contract owner's address to another address.
+2. transferFrom, allows the transfer of tokens from one address to another if approved by the owner.
+3. dividends, calculates the amount of dividends for a specific address.
+4. withdraw, allows the withdrawal of dividends to a specified address.
+5. reserve, calculates the reserve amount of the contract.
+6. buy, enables the purchase of tokens by sending a specific amount of ether.

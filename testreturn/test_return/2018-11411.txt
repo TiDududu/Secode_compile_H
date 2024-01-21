@@ -1,0 +1,15 @@
+Primary functionality: This contract is for the DimonCoin cryptocurrency and contains functionality for transferring tokens, distributing tokens to multiple addresses, checking token balances, and approving token transfers.
+
+1. name, returns the name "DimonCoin";
+2. symbol, returns the symbol "FUD";
+3. decimals, returns the number of decimal places (8);
+4. DimonCoin, initializes the contract and assigns the total supply of tokens to the contract owner;
+5. onlyOwner, modifier that restricts access to functions to the contract owner;
+6. transferOwnership, allows the contract owner to transfer ownership to a new address;
+7. getEthBalance, retrieves the ETH balance of the specified address;
+8. distributeFUD, distributes tokens to multiple addresses, based on specified criteria;
+9. balanceOf, retrieves the token balance of the specified address;
+10. onlyPayloadSize, modifier that mitigates the ERC20 short address attack;
+11. transfer, transfers tokens from the sender's account to the specified address;
+12. transferFrom, transfers tokens from a specified account to another address, if allowed;
+13. approve, allows the specified spender to withdraw a specified amount of tokens from the sender's account.

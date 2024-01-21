@@ -1,0 +1,18 @@
+Primary functionality: This contract is for a custom ERC20 token called CERB Coin. It includes functionalities for token transfers, ICO sales, and ownership management.
+
+1. CERB_Coin, Constructor function to initialize the contract with initial supply tokens, owner, and other parameters.
+2. onlyOwner, Modifier to restrict access to certain functions to the contract owner or a specific backup address.
+3. receiveApproval, Function to handle the approval of token transfer from another contract.
+4. fallback, Fallback function to receive Ether when sent to the contract.
+5. transfer, Function to transfer tokens from the sender's address to a specified recipient.
+6. approve, Function to allow a spender to withdraw tokens from the caller's address.
+7. transferFrom, Function to transfer tokens from one address to another.
+8. burn, Function to burn a specific amount of tokens.
+9. mintToken, Function to mint new tokens and assign them to an address.
+10. freezeAccount, Function to freeze or unfreeze a specific account from transferring tokens.
+11. setICOStatus, Function to set the ICO status (allow/disallow online purchase).
+12. setTokenPrice, Function to set the token price for the ICO.
+13. withdrawEther, Function to withdraw Ether from the contract to the specified beneficiary address.
+14. setAllowTransferToken, Function to allow or disallow token transfer for members.
+
+The contract also includes various state variables, mappings, and events to manage token balances, allowances, frozen accounts, and events related to token transfers and burns.

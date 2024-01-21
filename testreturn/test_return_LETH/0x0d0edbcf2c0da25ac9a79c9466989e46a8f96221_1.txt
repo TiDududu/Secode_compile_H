@@ -1,0 +1,9 @@
+Primary functionality: This contract is a simple Ethereum dice game where players can place bets and settle them based on a random seed provided by the server.
+
+1. setSettler, Allows the owner to set a new address as the settler.
+2. updateMaxProfit, Updates the maximum profit that can be made from the bets.
+3. setLeverage, Allows the owner to set the leverage for calculating the maximum profit.
+4. withdrawFunds, Allows the owner to withdraw funds from the contract.
+5. kill, Allows the owner to destroy the contract and retrieve any remaining funds.
+6. placeBet, Allows players to place bets by providing a player seed, a seed hash, and a target number.
+7. settleBet, Allows the settler to settle bets by providing a random seed and calculating the result based on the player's seed and the random seed.

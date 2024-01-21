@@ -1,0 +1,8 @@
+Primary functionality: This contract is a simple game contract where players can place bets and potentially win a jackpot. The contract also includes functionality for setting bot address and secret signer, as well as handling donations.
+
+1. setBotAddress, Allows the owner to set the address of the bot.
+2. setSecretSigner, Allows the owner to set the address of the secret signer.
+3. wager, Allows players to place bets by sending ether and specifying the bet outcome. It also checks the contract's health before accepting the bet.
+4. fallback function, Allows the contract to receive ether.
+
+The contract also includes modifiers for access control and contract health checks. Additionally, it includes events for wager, win, lose, refund, donation, failed payment, payment, and jackpot payment.

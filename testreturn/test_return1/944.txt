@@ -1,0 +1,30 @@
+Primary functionality: The contract implements an ERC20 token called VXR with the ability to transfer tokens, approve spending, and transfer from one account to another. It also includes ownership management and pausable functionality.
+
+1. SafeMath.add, Safely adds two unsigned integers, reverts on overflow.
+2. SafeMath.sub, Safely subtracts two unsigned integers, reverts on underflow.
+3. SafeMath.mul, Safely multiplies two unsigned integers, reverts on overflow.
+4. SafeMath.div, Safely divides two unsigned integers, reverts on division by zero.
+
+5. ERC20Interface.totalSupply, Returns the total supply of tokens.
+6. ERC20Interface.balanceOf, Returns the balance of a specified address.
+7. ERC20Interface.allowance, Returns the amount which spender is still allowed to withdraw from owner.
+8. ERC20Interface.transfer, Transfers tokens from the caller's address to the recipient.
+9. ERC20Interface.approve, Approves the passed address to spend the specified amount of tokens on behalf of the message sender.
+10. ERC20Interface.transferFrom, Transfers tokens from one address to another.
+
+11. Owned, Manages ownership of the contract.
+    - transferOwnership, Allows the current owner to transfer control of the contract to a new owner.
+    - acceptOwnership, Allows the new owner to accept the ownership transfer.
+
+12. Pausable, Allows the contract owner to pause and unpause certain functions.
+    - pause, Pauses the contract.
+    - unpause, Unpauses the contract.
+
+13. VXR, Implements the ERC20 token functionality and pausable behavior.
+    - setAdmin, Allows the owner to set or remove an admin address.
+    - totalSupply, Returns the total supply of tokens.
+    - balanceOf, Returns the balance of a specified address.
+    - _transfer, Internal function to transfer tokens from one address to another.
+    - transfer, Transfers tokens from the caller's address to the recipient.
+
+The contract also includes events for Transfer, Approval, FrozenFunds, and Buy.

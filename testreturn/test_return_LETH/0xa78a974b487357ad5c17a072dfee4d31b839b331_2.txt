@@ -1,0 +1,15 @@
+Primary functionality: This contract is for a token (HOT) with functionalities for transferring tokens, checking balances, setting rates, and handling ticket transactions.
+
+1. balanceOf, returns the balance of a given address.
+2. trashOf, returns the trash balance of a given address.
+3. getTec, returns the technical balance.
+4. getRate, returns the current rate of the token.
+5. getConsume, returns the consume rate of the token.
+6. getTotalConsume, returns the total consumed tokens.
+7. getBigJackpot, returns the value of the big jackpot.
+8. getSmallJackpot, returns the value of the small jackpot.
+9. getBalance, returns the balance of the contract.
+10. sendAll, sends tokens to multiple addresses.
+11. setRate, sets the rate of the token.
+12. tickets, handles the purchase of tickets using the token.
+13. ticketConsume, handles the consumption of tickets.

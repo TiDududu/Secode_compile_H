@@ -1,0 +1,10 @@
+Primary functionality: The contract is a game called SpaceWar, where players can mine resources, upgrade their mining capabilities, and engage in player versus player combat.
+
+1. SafeMath.add, Safely adds two numbers and checks for overflow.
+2. SafeMath.sub, Safely subtracts two numbers and checks for underflow.
+3. SafeMath.mul, Safely multiplies two numbers and checks for overflow.
+4. NumericSequence.sumOfN, Calculates the sum of an arithmetic sequence.
+
+The contract also includes various structs for MinerData, SpaceData, BoostData, PVPData, and TroopData, as well as mappings and arrays to store game data.
+
+The constructor initializes the game parameters including space data and boost data, and sets the owner of the contract.

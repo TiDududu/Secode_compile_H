@@ -1,0 +1,14 @@
+Primary functionality: This contract is a multi-signature wallet that requires the confirmation of multiple owners for executing transactions. It allows for the addition, removal, and replacement of owners, as well as changing the required number of confirmations for transactions.
+
+1. revoke, Revokes a prior confirmation of the given operation.
+2. changeOwner, Replaces an owner `_from` with another `_to`.
+3. addOwner, Adds a new owner to the wallet.
+4. removeOwner, Removes an owner from the wallet.
+5. changeRequirement, Changes the required number of confirmations for transactions.
+6. isOwner, Checks if an address is an owner of the wallet.
+7. hasConfirmed, Checks if a specific owner has confirmed a particular operation.
+8. setDailyLimit, (Re)sets the daily limit for transactions.
+9. execute, Executes a transaction to a specified address with a given value and data, returning the operation hash.
+10. confirm, Confirms a transaction with the given operation hash.
+
+The contract also includes event logging for various actions such as confirmation, revocation, owner changes, requirement changes, deposits, and transactions.

@@ -1,0 +1,5 @@
+Primary functionality: This contract allows users to deposit and check their account balances.
+
+1. contractMoneyBalance, returns the balance of the contract in wei.
+2. addressMoneyBalance, returns the balance of the caller's address in wei.
+3. depositMoney, allows users to deposit money into their account and updates the balance in wei.

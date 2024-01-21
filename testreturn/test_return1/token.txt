@@ -1,0 +1,5 @@
+Primary functionality: This contract is a basic token contract that allows for the creation of tokens and their transfer between addresses.
+
+1. Token, Constructor function that initializes the token with an initial supply.
+2. transfer, Allows the sender to transfer a specified amount of tokens to another address.
+3. balanceOf, Retrieves the token balance of a specified address.

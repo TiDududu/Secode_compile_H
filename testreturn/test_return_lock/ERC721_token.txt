@@ -1,0 +1,10 @@
+Primary functionality: This contract implements the ERC721 token standard, allowing for the creation, ownership tracking, and transfer of non-fungible tokens (NFTs).
+
+1. balanceOf, returns the number of tokens owned by a specific address.
+2. ownerOf, returns the owner of a specific token.
+3. transfer, transfers a token from the caller's address to a new owner.
+4. create, creates a new NFT with a unique ID, name, and DNA.
+5. approve, approves another address to transfer the given token.
+6. _transfer, internal function to transfer a token from one address to another, updating balances and ownership.
+
+The contract also emits events for token transfers and new NFT creation.

@@ -1,0 +1,10 @@
+Primary functionality: The contract facilitates the Proof of Work (PoW) mining of ZeroGold tokens.
+
+1. SafeMath.add, Safely adds two numbers and checks for overflow.
+2. SafeMath.sub, Safely subtracts two numbers and checks for underflow.
+3. SafeMath.mul, Safely multiplies two numbers and checks for overflow.
+4. SafeMath.div, Safely divides two numbers and checks for division by zero.
+5. Owned, Manages ownership and transfer of ownership.
+6. ERC20Interface, Interface for ERC20 standard token functions.
+7. ERC918Interface, Interface for ERC918 standard mining functions.
+8. ZeroGoldPOWMining, Implements the PoW mining of ZeroGold tokens and includes functions for merging, minting, and constructor for initializing the contract.

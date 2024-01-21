@@ -1,0 +1,41 @@
+Primary functionality: This contract facilitates an Ethereum-based gambling game with various betting options and a jackpot feature.
+
+1. Constructor, Initializes the contract with the specified owner addresses, withdrawer address, and secret signer address.
+
+2. placeBet, Allows a player to place a bet by specifying the amount, modulo, roll under, and a commit value.
+
+3. settleBet, Processes the bet and settles the outcome by calculating the winnings and updating the jackpot size.
+
+4. refundBet, Refunds the bet amount if the bet has expired or if it cannot be settled.
+
+5. withdrawFunds, Allows the owner to withdraw funds from the contract.
+
+6. withdrawJackpot, Allows the owner to withdraw the jackpot funds.
+
+7. addFundsToJackpot, Allows the owner to add funds to the jackpot.
+
+8. kill, Allows the owner to stop the contract and withdraw any remaining funds.
+
+9. setOwner, Allows the owner to transfer ownership to a new address.
+
+10. setSecretSigner, Allows the owner to set a new secret signer address.
+
+11. setStopped, Allows the owner to stop or resume the contract.
+
+12. setMaxProfit, Allows the owner to set the maximum profit that can be made from a single bet.
+
+13. setWithdrawer, Allows the owner to set a new withdrawer address.
+
+14. setCroupier, Allows the owner to set a new croupier address.
+
+15. setHouseEdge, Allows the owner to set the house edge and minimum amount.
+
+16. setJackpotParameters, Allows the owner to set the jackpot parameters such as modulo, fee, and minimum bet.
+
+17. setMaxBetProfit, Allows the owner to set the maximum bet profit.
+
+18. increaseJackpot, Allows the owner to increase the jackpot size.
+
+19. decreaseJackpot, Allows the owner to decrease the jackpot size.
+
+20. owner1, owner2, withdrawer, secretSigner, croupier, maxProfit, stopped, jackpotSize, lockedInBets, Constants, and Bet struct, Public variables and data structures used in the contract.

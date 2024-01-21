@@ -1,0 +1,10 @@
+Primary functionality: The contract is a game where users deposit 1 ether to participate and have a chance to receive a payout. The contract randomly selects a participant to receive the payout when the contract balance allows for it.
+
+1. LuckyDoubler: Constructor function to set the owner of the contract.
+2. onlyowner: Modifier to restrict access to certain functions to the contract owner.
+3. init: Fallback function to initialize the deposit process when Ether is sent to the contract.
+4. join: Function to handle user deposits and add them to the game entries.
+5. rand: Function to generate a random number between 0 and a specified maximum value.
+6. changeOwner: Function to change the owner of the contract.
+7. changeMultiplier: Function to change the payout multiplier for the game.
+8. changeFee: Function to change the fee percentage for the game.

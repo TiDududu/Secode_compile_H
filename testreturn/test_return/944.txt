@@ -1,0 +1,11 @@
+Primary functionality: Transfer tokens from one account to another.
+1. totalSupply, returns the total supply of tokens.
+2. balanceOf, returns the balance of a specified address.
+3. allowance, returns the amount of tokens that an owner allows a spender to spend.
+4. transfer, transfers tokens from the caller's address to the specified address.
+5. approve, allows a spender to withdraw from the caller's address multiple times, up to the specified amount.
+6. transferFrom, transfers tokens from one address to another.
+7. setAdmin, sets the admin status of a specified address.
+8. pause, pauses the contract.
+9. unpause, unpauses the contract.
+10. _transfer, performs the internal transfer of tokens between two addresses.

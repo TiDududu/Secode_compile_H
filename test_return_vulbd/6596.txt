@@ -1,0 +1,11 @@
+Primary functionality: This contract is for creating an ERC20 token with the ability to mint new tokens and transfer ownership.
+
+1. ERC20Basic - This is an interface defining the basic ERC20 token functions such as totalSupply, balanceOf, and transfer.
+2. SafeMath - A library for safe mathematical operations to prevent overflow and underflow.
+3. BasicToken - A contract implementing the ERC20Basic interface with functions for transferring tokens and checking balances.
+4. ERC20 - An interface extending ERC20Basic with additional functions for allowance, transferFrom, and approve.
+5. StandardToken - A contract implementing ERC20 with additional functions for managing allowances and approvals.
+6. Ownable - A contract to manage ownership and transfer ownership of the token contract.
+7. MintableToken - A contract implementing the ability to mint new tokens and finish minting.
+
+You need to deploy this contract to create an ERC20 token with the ability to mint new tokens, transfer ownership, and perform standard token operations such as transferring tokens and managing allowances.

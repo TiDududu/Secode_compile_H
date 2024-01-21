@@ -1,0 +1,5 @@
+Primary functionality: This contract allows users to lock a certain amount of Ether for transfer and retrieve details of the locked transfer.
+
+1. lockforTransfer, This function allows users to lock a certain amount of Ether for transfer. It takes in Ether and stores the details of the transfer including the amount, owner, and transfer ID. It also increments the transaction nonce and updates the transfer list for the sender.
+
+2. getTransfer, This function allows users to retrieve details of a locked transfer by providing the transfer ID. It returns the amount, owner, and transfer ID of the locked transfer.

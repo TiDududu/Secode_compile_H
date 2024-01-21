@@ -1,0 +1,4 @@
+Primary functionality: This contract facilitates the transfer of funds between users and allows users to withdraw their balances.
+
+1. transfer, allows the sender to transfer a specified amount of funds to another address.
+2. withdrawBalance, allows a user to withdraw their balance from the contract, while also resetting their balance to zero after the withdrawal.

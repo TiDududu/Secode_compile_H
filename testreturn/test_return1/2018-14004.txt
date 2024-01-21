@@ -1,0 +1,9 @@
+Primary functionality: This contract implements an ERC20 token with additional functionality for transferring tokens and managing allowances.
+
+1. balanceOf, Returns the balance of the specified address.
+2. transfer, Transfers tokens to a specified address.
+3. allowance, Returns the amount of tokens that an owner has approved for a spender.
+4. transferFrom, Transfers tokens from one address to another, with approval.
+5. approve, Approves the passed address to spend the specified amount of tokens on behalf of the message sender.
+
+The contract also includes a SafeMath library for safe mathematical operations and a modifier for payload size checking.

@@ -1,0 +1,22 @@
+quire(balanceOf[_from] >= _value);
+        require(_value <= allowance[_from][msg.sender]);
+        balanceOf[_from] -= _value;
+        allowance[_from][msg.sender] -= _value;
+        totalSupply -= _value;
+        emit Burn(_from, _value);
+        return true;
+    }
+
+Primary functionality: This contract implements a basic ERC-20 token with additional functionality to handle ownership, locking, and freezing of accounts.
+
+1. safeMul, Safely multiplies two uint256 numbers.
+2. safeDiv, Safely divides two uint256 numbers.
+3. safeSub, Safely subtracts two uint256 numbers.
+4. safeAdd, Safely adds two uint256 numbers.
+5. transferOwnership, Allows the owner to transfer ownership of the contract to a new address.
+6. setLock, Allows the owner to set a lock on the contract.
+7. transfer, Transfers tokens from the sender's address to the specified address.
+8. transferFrom, Allows a third party to transfer tokens from one address to another, given the necessary allowance.
+9. approve, Approves a third party spender to transfer a specified amount of tokens from the sender's address.
+10. burn, Allows the owner to burn a specified amount of tokens from their address.
+11. burnFrom, Allows a third party to burn a specified amount of tokens from a specific address, given the necessary allowance.

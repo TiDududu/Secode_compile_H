@@ -1,0 +1,13 @@
+Primary functionality: The contract implements a basic ERC20 token called "Rocket Coin" with additional functionality for airdrops and fund withdrawal.
+
+1. RocketCoin, Constructor function to initialize the contract with the total token supply and set the contract owner.
+2. balanceOf, Returns the token balance of a specified address.
+3. allowance, Returns the amount of tokens that an owner has approved for a spender.
+4. transfer, Transfers tokens from the sender's address to a specified recipient.
+5. multiTransfer, Allows the sender to transfer tokens to multiple addresses in a single transaction.
+6. transferFrom, Transfers tokens on behalf of the owner given approval from the owner.
+7. approve, Approves the passed address to spend the specified amount of tokens on behalf of the sender.
+8. setupAirDrop, Allows the owner to set up the parameters for the airdrop, including status, amount, and gas price.
+9. withdrawFunds, Allows the owner to withdraw funds from the contract, either in Ether or ERC20 tokens.
+
+The contract also includes an unnamed fallback function to facilitate airdrops to participants who meet certain criteria.

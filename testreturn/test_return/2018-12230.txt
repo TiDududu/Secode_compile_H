@@ -1,0 +1,10 @@
+Primary functionality: This contract is an implementation of a cryptocurrency using the ERC20 standard. It allows the transfer of tokens between addresses, checking for account balance, approval, and checking if an account is frozen. This contract also defines an owner, allowing the transfer of ownership.
+
+1. balanceOf, returns the balance of a specified account.
+2. transfer, transfers tokens from the sender's address to a specified address.
+3. transferFrom, transfers tokens from one address to another if approved by the owner.
+4. approve, approves the transfer of tokens from the owner's account to another account.
+5. allowance, checks the amount of tokens approved for transfer by an owner to a spender.
+6. transferOwnership, allows the transfer of ownership from the current owner to a new owner.
+7. balanceOf, returns the balance of a specified account.
+8. transfer, transfers tokens from the sender's address to a specified address.

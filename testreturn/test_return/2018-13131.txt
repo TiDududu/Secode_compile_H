@@ -1,0 +1,8 @@
+;
+
+Primary functionality: Transfer tokens from one address to another
+
+1. transfer: Transfer tokens for a specified address, updating balances and emitting a Transfer event.
+2. balanceOf: Get the balance of a specified address.
+3. allowance: Get the amount of tokens allowed to be spent by a specified spender on behalf of an owner.
+4. transferFrom: Transfer tokens from one address to another after allowance is checked and reducing the spender's allowance.

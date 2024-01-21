@@ -1,0 +1,23 @@
+Primary functionality: This contract is a time-locked token contract that manages the release of tokens to different beneficiaries in multiple rounds over time.
+
+1. Ownable, Constructor: Sets the contract deployer as the owner of the contract.
+2. Ownable, onlyOwner: Modifier to restrict access to only the owner of the contract.
+3. SafeMath, mul: Multiplies two uint256 numbers and checks for overflow.
+4. SafeMath, div: Divides two uint256 numbers.
+5. SafeMath, sub: Subtracts one uint256 number from another and checks for underflow.
+6. SafeMath, add: Adds two uint256 numbers and checks for overflow.
+7. SafeERC20, safeTransfer: Safely transfers ERC20Basic tokens to a specified address.
+8. SafeERC20, safeTransferFrom: Safely transfers ERC20 tokens from one address to another.
+9. SafeERC20, safeApprove: Safely approves the transfer of ERC20 tokens to a spender.
+10. ERC20Basic, totalSupply: Returns the total supply of the ERC20Basic token.
+11. ERC20Basic, balanceOf: Returns the balance of a specified address.
+12. ERC20Basic, transfer: Transfers tokens from the sender's address to a specified address.
+13. ERC20, allowance: Returns the amount which the spender is still allowed to withdraw from the owner.
+14. ERC20, transferFrom: Transfers tokens from one address to another.
+15. ERC20, approve: Approves the address to spend the specified amount of tokens on behalf of the owner.
+16. BasicToken, totalSupply: Returns the total supply of the token.
+17. BasicToken, transfer: Transfers tokens from the sender's address to a specified address.
+18. BasicToken, balanceOf: Returns the balance of a specified address.
+19. AMTTimelockedToken: Constructor to initialize the time-locked token contract with various parameters including token, beneficiaries, release times, and token release caps for different purposes.
+
+You need to deploy this contract to create a time-locked token contract that manages the release of tokens to different beneficiaries in multiple rounds over time.

@@ -1,0 +1,11 @@
+Primary functionality: This contract is an implementation of the ERC20 token standard with additional functionality for airdropping tokens.
+
+1. totalSupply: Returns the total number of tokens in existence.
+2. balanceOf: Returns the balance of the specified address.
+3. AirdropCheck: Internal function to airdrop tokens to an address if it has not been initialized before.
+4. allowance: Checks the amount of tokens that an owner allowed to a spender.
+5. transfer: Transfers tokens to a specified address and performs an airdrop check before the transfer.
+6. approve: Approves the passed address to spend the specified amount of tokens on behalf of the message sender.
+7. transferFrom: Allows a spender to transfer tokens from one address to another on behalf of the owner.
+
+Note: The SafeMath library is used for arithmetic operations to prevent overflows and underflows.

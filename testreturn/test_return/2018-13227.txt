@@ -1,0 +1,10 @@
+Primary functionality: This is a Solidity contract for an ERC20 token.
+
+1. owned, sets the owner of the contract and provides a modifier to only allow the owner to perform certain actions;
+2. transferOwnership, allows the owner to transfer ownership of the contract;
+3. tokenRecipient, function to receive approval for transferring tokens;
+4. token, initializes the token with the initial supply, name, decimal units, and symbol;
+5. transfer, allows the sender to transfer tokens to another address while checking for available balance and preventing overflow;
+6. approve, allows the sender to approve another address to spend tokens on their behalf;
+7. approveAndCall, allows the sender to approve another address to spend tokens and communicate with the approved contract in a single transaction;
+8. transferFrom, allows a contract to transfer tokens on behalf of the sender, while checking for available balance and allowance.

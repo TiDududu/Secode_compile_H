@@ -1,0 +1,6 @@
+Primary functionality: This contract is an implementation of ERC20 token standard with basic functionalities for transferring tokens, checking balances, and approving token transfers.
+
+1. transfer, Allows transferring tokens to a specified address.
+2. balanceOf, Retrieves the balance of a specified address.
+3. transferFrom, Allows transferring tokens from one address to another, with approval.
+4. approve, Approves the passed address to spend a specified amount of tokens on behalf of the message sender.

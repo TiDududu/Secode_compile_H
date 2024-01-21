@@ -1,0 +1,15 @@
+Primary functionality: The main functionality of this contract is to handle ERC20 token transfers and approvals.
+
+1. receiveApproval, receive approval for token transfer.
+2. onlyController, modifier to restrict access to specific controller address.
+3. Controlled, constructor for Controlled contract to set the controller address.
+4. changeController, change the controller address.
+5. transfer, transfer tokens to a specified address.
+6. transferFrom, transfer tokens from one address to another based on approval.
+7. approve, approve another address to transfer tokens.
+8. allowance, check the amount of tokens that an owner has allowed to spend for a specific spender.
+9. Transfer, event emitted when tokens are transferred.
+10. Approval, event emitted when approval for token transfer is given.
+11. approveAndCall, approve a specified amount of tokens for transfer and trigger a function in the approved contract.
+
+This contract handles the functionality for ERC20 token transfers and approvals. You need to implement the receiveApproval function to receive approval for token transfer.

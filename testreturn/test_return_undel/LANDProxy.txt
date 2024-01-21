@@ -1,0 +1,11 @@
+Primary functionality: This contract is a proxy contract that allows for upgradability of the underlying logic contract. It also includes storage contracts for managing assets and LAND (Decentraland) related data.
+
+1. LANDStorage, stores the latest ping of each address and defines constants for bitwise operations.
+2. AssetRegistryStorage, stores asset-related data including names, descriptions, counts, ownership, and operator permissions.
+3. OwnableStorage, stores the owner of the contract.
+4. ProxyStorage, stores the current contract being proxied.
+5. Storage, inherits from ProxyStorage, OwnableStorage, AssetRegistryStorage, and LANDStorage to combine all storage functionalities.
+6. DelegateProxy, provides functions for delegate calls and checking if an address is a contract.
+7. IApplication, defines an interface for initializing an application.
+8. Proxy, allows for upgrading the underlying logic contract and delegates calls to the current contract.
+9. LANDProxy, inherits from Storage and Proxy to combine all functionalities for LAND-related proxy contracts.

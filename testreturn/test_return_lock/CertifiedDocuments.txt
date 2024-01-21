@@ -1,0 +1,12 @@
+Primary functionality: This contract is used to manage certified documents related to films, including creating and retrieving subtitles and their details.
+
+1. setOwner, Allows the current owner to transfer ownership of the contract to a new address.
+2. createSubtitle, Creates a new subtitle entry with the provided details and emits an event upon successful creation.
+3. getSubtitleArray, Retrieves the details of a specific subtitle entry.
+4. getArrayLength, Retrieves the length of the subtitle array for a specific film.
+5. getISANsubtitles, Retrieves an array of ISAN subtitles for a specific film.
+6. getFilmName, Retrieves the film name for a specific subtitle entry.
+7. getContractType, Retrieves the contract type for a specific subtitle entry.
+8. getContractHash, Retrieves the contract hash for a specific subtitle entry.
+9. getSigningDate, Retrieves the signing date for a specific subtitle entry.
+10. getStripeTxNumber, Retrieves the stripe transaction number for a specific subtitle entry.

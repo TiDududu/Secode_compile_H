@@ -1,0 +1,5 @@
+Primary functionality: This contract is a simple EtherBank that allows users to deposit and withdraw Ether.
+
+1. getBalance, returns the balance of the specified user.
+2. addToBalance, allows users to add Ether to their balance.
+3. withdrawBalance, allows users to withdraw their balance in Ether.

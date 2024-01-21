@@ -1,0 +1,5 @@
+Primary functionality: This contract serves as a simple piggy bank where users can deposit ether and later withdraw it, with an option for the creator to break the contract and withdraw all funds.
+
+1. Function, fallback function;
+2. Function Collect, allows users to withdraw a specified amount of ether from their balance in the piggy bank, given that the balance is greater than or equal to the minimum sum and the specified amount does not exceed the balance.
+3. Function Break, allows the creator to destroy the contract and withdraw all funds if the sender is the creator and the contract balance is greater than or equal to the minimum sum.

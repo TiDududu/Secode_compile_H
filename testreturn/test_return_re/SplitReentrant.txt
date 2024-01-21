@@ -1,0 +1,7 @@
+Primary functionality: The contract allows users to deposit ethers and withdraw them, while also demonstrating a re-entrancy vulnerability.
+
+1. deposit, Allows users to deposit ethers into the contract.
+2. withdraw_step1, Initiates the withdrawal process by checking the balance and calling the withdraw_step2 function.
+3. withdraw_step2, Deducts the specified amount from the user's balance.
+
+Note: The code contains a re-entrancy vulnerability in the withdraw_step1 function, which can lead to the theft of ethers from the contract.

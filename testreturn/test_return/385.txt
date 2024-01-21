@@ -1,0 +1,10 @@
+Primary functionality: This contract allows for the creation of a token (Helping Blocks Token) with functionality for transferring tokens, enabling/disabling donations, setting a description, and allowing for donations.
+
+1. transferOwnership, Allows for transfer of ownership to a new address.
+2. _transfer, Internal function to transfer tokens from one address to another.
+3. transfer, Allows for the transfer of tokens to a specified address.
+4. disableDonation, Sets the donationClosed variable to true, disabling further donations.
+5. enableDonation, Sets the donationClosed variable to false, enabling further donations.
+6. setDescription, Sets the description of the token.
+7. payable function, Allows for receiving donations and transfers tokens to the donator if their balance is less than 1.
+8. safeWithdrawal, Allows the owner to withdraw funds from the contract.

@@ -1,0 +1,9 @@
+Primary functionality: This contract is for a cryptocurrency token called Rocket Coin. Users can transfer tokens, check their balance, approve transfers, and participate in an airdrop event.
+
+1. balanceOf, Returns the balance of a specified address.
+2. transfer, Transfers tokens from the sender's account to the specified address.
+3. allowance, Checks the amount of tokens that an address is allowed to spend on behalf of another address.
+4. multiTransfer, Allows the sender to transfer tokens to multiple addresses simultaneously.
+5. transferFrom, Transfers tokens on behalf of the owner to a specified address.
+6. approve, Approves the specified address to spend a specified amount of tokens on behalf of the sender.
+7. setupAirDrop, Allows the owner to set up the parameters for an airdrop event.

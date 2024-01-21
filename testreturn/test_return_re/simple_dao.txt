@@ -1,0 +1,5 @@
+Primary functionality: This contract is a simple decentralized autonomous organization (DAO) that allows users to donate ether to other addresses and withdraw ether from their own credit balance.
+
+1. donate, Allows users to donate ether to a specified address and increase the credit balance of the recipient.
+2. withdraw, Allows users to withdraw a specified amount of ether from their own credit balance, while also updating the credit balance accordingly.
+3. queryCredit, Retrieves the credit balance of a specified address.

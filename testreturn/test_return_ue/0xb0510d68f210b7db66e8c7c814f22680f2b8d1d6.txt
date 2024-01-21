@@ -1,0 +1,14 @@
+Primary functionality: The contract allows the owner to split funds among multiple puppets and manage their addresses.
+
+1. withdraw, allows the owner to withdraw the contract's balance.
+2. getPuppetCount, returns the count of puppets created.
+3. newPuppet, allows the owner to create a new puppet contract.
+4. setExtra, updates the mapping of extra addresses.
+5. fundPuppets, allows the owner to distribute funds among puppets.
+6. fallback function, allows the contract to receive Ether.
+
+The Puppet contract:
+1. fallback function, sends received Ether to a specified target address.
+2. withdraw, allows the master to withdraw the contract's balance.
+
+The SafeMath library provides arithmetic functions with overflow checks.

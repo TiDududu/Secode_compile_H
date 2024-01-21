@@ -1,0 +1,12 @@
+Primary functionality: This contract is for an ERC20 token with the ability to transfer tokens, approve spending, and burn tokens.
+
+1. owned, Constructor sets the owner of the contract and includes a modifier for onlyOwner.
+2. owned, transferOwnership allows the owner to transfer ownership to a new address.
+3. TokenERC20, Constructor initializes the token with initial supply, name, and symbol.
+4. TokenERC20, _transfer is an internal function for token transfer with checks and event emission.
+5. TokenERC20, transfer allows the sender to transfer tokens to a recipient.
+6. TokenERC20, transferFrom allows an approved address to transfer tokens on behalf of the owner.
+7. TokenERC20, approve allows an address to approve another address to spend tokens on its behalf.
+8. TokenERC20, burn removes tokens from the total supply and the sender's balance.
+
+The contract includes functionality for transferring tokens, approving spending, and burning tokens.

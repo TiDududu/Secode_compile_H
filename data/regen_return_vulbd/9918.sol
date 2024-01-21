@@ -1,0 +1,121 @@
+pragma solidity ^0.4.26;
+
+contract DSNote {
+    event LogNote(
+        bytes4 indexed sig,
+        address indexed guy,
+        bytes32 indexed foo,
+        bytes32 indexed bar,
+        uint wad,
+        bytes fax
+    );
+
+    modifier note {
+        bytes32 foo;
+        bytes32 bar;
+        assembly {
+            foo := calldataload(4)
+            bar := calldataload(36)
+        }
+        emit LogNote(msg.sig, msg.sender, foo, bar, msg.value, msg.data);
+        _;
+    }
+}
+
+contract ERC20 {
+    function totalSupply() public view returns (uint);
+    function balanceOf(address guy) public view returns (uint);
+    function allowance(address src, address guy) public view returns (uint);
+    function transfer(address dst, uint wad) public returns (bool);
+    function transferFrom(address src, address dst, uint wad) public returns (bool);
+    function approve(address guy, uint wad) public returns (bool);
+
+    event Transfer(address indexed src, address indexed dst, uint wad);
+    event Approval(address indexed src, address indexed guy, uint wad);
+}
+
+contract DSAuthority {
+    function canCall(address src, address dst, bytes4 sig) public view returns (bool);
+}
+
+contract DSAuthEvents {
+    event LogSetAuthority(address indexed authority);
+    event LogSetOwner(address indexed owner);
+}
+
+contract DSAuth is DSAuthEvents {
+    DSAuthority public authority;
+    address public owner;
+
+    modifier auth {
+        require(isAuthorized(msg.sender, msg.sig));
+        _;
+    }
+
+    function isAuthorized(address src, bytes4 sig) internal view returns (bool) {
+        if (src == address(this)) {
+            return true;
+        } else if (src == owner) {
+            return true;
+        } else if (authority == DSAuthority(0)) {
+            return false;
+        } else {
+            return authority.canCall(src, this, sig);
+        }
+    }
+
+    function setOwner(address owner_) public auth {
+        owner = owner_;
+        emit LogSetOwner(owner);
+    }
+
+    function setAuthority(DSAuthority authority_) public auth {
+        authority = authority_;
+        emit LogSetAuthority(authority);
+    }
+
+    function assert(bool x) internal pure {
+        if (!x) revert();
+    }
+}
+
+contract DSExec {
+    function tryExec(address target, bytes calldata, uint value) public returns (bool ok);
+    function exec(address target, bytes calldata, uint value) public returns (bytes memory o);
+}
+
+contract DSMath {
+    function add(uint x, uint y) internal pure returns (uint z) {
+        z = x + y;
+        assert(z >= x);
+        return z;
+    }
+
+    function sub(uint x, uint y) internal pure returns (uint z) {
+        z = x - y;
+        assert(z <= x);
+        return z;
+    }
+
+    function mul(uint x, uint y) internal pure returns (uint z) {
+        if (x == 0) {
+            return 0;
+        }
+        z = x * y;
+        assert(z / x == y);
+        return z;
+    }
+
+    function div(uint x, uint y) internal pure returns (uint z) {
+        z = x / y;
+        return z;
+    }
+
+    function min(uint x, uint y) internal pure returns (uint z) {
+        return x <= y ? x : y;
+    }
+
+    function max(uint x, uint y) internal pure returns (uint z) {
+        return x >= y ? x : y;
+    }
+}

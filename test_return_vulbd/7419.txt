@@ -1,0 +1,6 @@
+Primary functionality: This contract facilitates a raffle system where participants can purchase raffle tickets using a specific ERC20 token. The contract also includes functionality to start a new raffle, buy raffle tickets, and award raffle prizes.
+
+1. SponsoredItemGooRaffle, Constructor function to set the contract owner.
+2. startTokenRaffle, Function to start a new raffle with specified end time and conditions.
+3. buyRaffleTicket, Function for participants to buy raffle tickets using a specific ERC20 token.
+4. awardRafflePrize, Function to award the raffle prize to the winner based on the raffle ticket selection process.

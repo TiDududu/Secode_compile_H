@@ -1,0 +1,9 @@
+Primary functionality: This contract is a basic ERC20 token with the ability to mark content.
+
+1. AbcdEfg, Constructor function that initializes the contract by setting the total supply to the contract creator's address.
+2. mark, Internal function that allows the caller to mark content with their address and the provided data.
+3. totalSupply, Public function that returns the total supply of the token.
+4. balanceOf, Public function that returns the balance of the specified address.
+5. transfer, Public function that allows the caller to transfer tokens to a specified address, while also checking if the sender has marked tokens.
+
+The contract also includes mappings for marks, balances, and marked, as well as event logging for transfers.

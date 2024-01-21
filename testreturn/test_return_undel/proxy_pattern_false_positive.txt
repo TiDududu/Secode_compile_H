@@ -1,0 +1,4 @@
+Primary functionality: This contract serves as a proxy, allowing the owner to execute calls to other contracts and withdraw funds.
+
+1. proxyCall, allows the owner to execute calls to other contracts using delegatecall.
+2. withdraw, allows the owner to withdraw funds from the contract.

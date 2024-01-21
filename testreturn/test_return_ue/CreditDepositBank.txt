@@ -1,0 +1,12 @@
+Primary functionality: This Solidity contract is a simple credit deposit bank with ownership and management functionalities.
+
+1. Ownable, Constructor sets the contract owner;
+2. onlyOwner, Modifier to restrict access to only the contract owner;
+3. takeOver, Allows an address with non-zero balance to take over as the owner;
+4. setManager, Sets the manager address if their balance is greater than 100 finney;
+5. deposit, Allows users to deposit funds into their account with a minimum deposit of 10 finney;
+6. withdraw, Allows the owner to withdraw funds from a client's account;
+7. credit, Allows users to credit their account with a minimum amount equal to the contract's balance;
+8. close, Allows the manager to close the contract and transfer the balance to the manager's address.
+
+The contract consists of two main contracts: Ownable and CreditDepositBank. The Ownable contract establishes ownership functionality, while the CreditDepositBank contract implements banking functionalities such as deposit, withdrawal, crediting, and management.

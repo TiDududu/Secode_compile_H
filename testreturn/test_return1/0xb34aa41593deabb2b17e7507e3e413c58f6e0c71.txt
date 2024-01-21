@@ -1,0 +1,5 @@
+Primary functionality: This contract is a pyramid scheme that allows users to buy tokens with Ether and earn dividends from subsequent token purchases. The contract also provides functions to withdraw dividends and reinvest them back into tokens.
+
+1. balanceOf, Returns the number of tokens currently held by the specified address.
+2. withdraw, Withdraws all dividends held by the caller, updates global variables, and transfers Ether back to the caller.
+3. reinvestDividends, Converts the Ether accrued as dividends back into tokens without having to withdraw it first. Saves on gas and potential price spike loss.

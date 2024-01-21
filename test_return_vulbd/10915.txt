@@ -1,0 +1,16 @@
+Primary functionality: This contract is a gambling game that allows players to roll a dice within a specified range and win based on the outcome.
+
+1. safeToAdd, Ensures safe addition of two unsigned integers by checking for overflow.
+2. safeAdd, Safely adds two unsigned integers, checking for overflow and reverting if necessary.
+3. safeToSubtract, Ensures safe subtraction of two unsigned integers by checking for underflow.
+4. safeSub, Safely subtracts two unsigned integers, checking for underflow and reverting if necessary.
+5. playerRoll, Allows a player to roll a dice within a specified range and win based on the outcome. It also calculates the player's profit and deducts the house edge.
+6. betIsValid, Modifier to check if the bet size and range are valid for a regular bet.
+7. oddEvenBetIsValid, Modifier to check if the bet size and odd/even selection are valid for an odd/even bet.
+8. gameIsActive, Modifier to check if the game is active.
+9. recommendAreActive, Modifier to check if the recommendation system is active.
+10. jackpotAreActive, Modifier to check if the jackpot system is active.
+11. onlyOwner, Modifier to restrict access to the contract owner.
+12. fallback function, Allows the contract to receive Ether and updates the contract balance.
+
+The contract also includes various state variables, events for logging results and transfers, and a constructor to initialize the contract owner and parameters.

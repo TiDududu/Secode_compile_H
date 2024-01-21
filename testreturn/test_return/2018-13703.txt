@@ -1,0 +1,11 @@
+Primary functionality: Create a contract for managing a custom cryptocurrency token with functionality for handling ico sales and transfers.
+
+1. tokenRecipient, allows the contract to receive approvals for token transfers.
+2. CERB_Coin, initializes the contract with initial token supply and sets various initial parameters including the ico status, token price, and the owner's address.
+3. balanceOf, Maps the token balance of each address.
+4. allowance, Maps the amount of tokens that can be spent by a specific address on behalf of another address.
+5. frozenAccount, Maps whether an account is frozen or not.
+6. FrozenFunds, Emits an event when an account is frozen or unfrozen.
+7. Transfer, Emits an event when tokens are transferred from one address to another.
+8. Burn, Emits an event when tokens are burned.
+9. TransferSell, Emits an event when tokens are transferred during an ico sale.

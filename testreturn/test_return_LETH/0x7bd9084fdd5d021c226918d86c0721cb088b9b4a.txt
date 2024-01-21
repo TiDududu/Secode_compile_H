@@ -1,0 +1,10 @@
+Primary functionality: The contract facilitates the transfer of ERC20 tokens to multiple addresses in a single transaction and also allows for the distribution of Ether to multiple addresses.
+
+1. ERC20Basic.totalSupply, returns the total supply of tokens.
+2. ERC20Basic.balanceOf, returns the token balance of a specified address.
+3. ERC20Basic.transfer, transfers tokens to a specified address.
+4. ERC20.allowance, returns the amount of tokens that an owner has allowed a spender to spend.
+5. ERC20.transferFrom, transfers tokens from one address to another.
+6. ERC20.approve, allows a spender to withdraw from the owner's account multiple times, up to the approved amount.
+7. MultiSend.multiSend, transfers a specified amount of ERC20 tokens to multiple addresses in a single transaction.
+8. MultiSend.multiSendEth, distributes Ether to multiple addresses in a single transaction and also transfers the remaining Ether back to the sender.

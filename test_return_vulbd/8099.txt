@@ -1,0 +1,22 @@
+Primary functionality: This contract is for a cryptocurrency token called "tipbot" with the symbol "TIP". It includes functionalities for transferring tokens, minting new tokens through Proof of Stake (PoS), and setting up ownership.
+
+1. SafeMath.mul, Safely multiply two numbers.
+2. SafeMath.div, Safely divide two numbers.
+3. SafeMath.sub, Safely subtract two numbers.
+4. SafeMath.add, Safely add two numbers.
+5. Ownable, Constructor to set the contract owner and modifier to restrict access to only the owner.
+6. ERC20Basic.totalSupply, Get the total supply of the token.
+7. ERC20Basic.balanceOf, Get the token balance of a specific address.
+8. ERC20Basic.transfer, Transfer tokens to a specified address.
+9. ERC20.allowance, Get the amount of tokens that an owner has allowed a spender to spend.
+10. ERC20.transferFrom, Transfer tokens from one address to another.
+11. ERC20.approve, Allow a spender to spend tokens on behalf of the owner.
+12. tipbotreg.mint, Mint new tokens through Proof of Stake (PoS).
+13. tipbotreg.coinAge, Calculate the coin age of an address.
+14. tipbotreg.annualInterest, Get the annual interest rate for PoS minting.
+15. tipbot, Constructor to initialize the token with its name, symbol, and initial supply.
+16. tipbot.transfer, Transfer tokens to a specified address.
+17. tipbot.onlyPayloadSize, Modifier to check the size of the payload in a transaction.
+18. tipbot.canTIPMint, Modifier to check if new tokens can be minted through PoS.
+
+The contract also includes various state variables, mappings, and events to manage token balances, allowances, and PoS minting.

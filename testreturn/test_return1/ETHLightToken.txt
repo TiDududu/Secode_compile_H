@@ -1,0 +1,9 @@
+Primary functionality: This contract implements an ERC20 token called "ETH Light" with the symbol "ELT". It also includes ownership functionality.
+
+1. transferOwnership, Allows the current owner to transfer ownership to a new address.
+2. transfer, Allows the sender to transfer tokens to a specified address.
+3. transferFrom, Allows the owner to transfer tokens from one address to another.
+4. balanceOf, Retrieves the token balance of a specified address.
+5. approve, Allows the owner to approve a specific address to spend a specified amount of tokens from the owner's account.
+6. allowance, Retrieves the amount of tokens that an owner has approved for a spender to spend.
+7. fallback function, Allows the contract to receive Ether and increase the sender's token balance accordingly.

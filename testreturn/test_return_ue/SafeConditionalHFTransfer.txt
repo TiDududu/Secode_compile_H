@@ -1,0 +1,7 @@
+Primary functionality: This Solidity contract is designed to facilitate safe conditional transfers based on the result of a classic check.
+
+1. SafeConditionalHFTransfer: Constructor function to initialize the contract and set the value of the 'classic' variable by calling the 'isClassic' function from the 'ClassicCheck' contract.
+
+2. classicTransfer: Function to transfer funds to the specified address based on the result of the classic check. If the result is not classic, the funds are sent to the sender's address. Otherwise, the funds are sent to the specified address.
+
+3. transfer: Function to transfer funds to the specified address based on the result of the classic check. If the result is classic, the funds are sent to the sender's address. Otherwise, the funds are sent to the specified address.

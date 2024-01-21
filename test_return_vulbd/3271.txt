@@ -1,0 +1,5 @@
+Primary functionality: The contract allows users to hodl (hold) Ethereum and then withdraw it after a certain time.
+
+1. hodl, This function allows users to hodl (hold) Ethereum by sending a payable transaction. It increases the hodler's balance and emits a Hodl event with the hodler's address and the amount hodled.
+
+2. party, This function allows hodlers to withdraw their hodled Ethereum after a certain time (partyTime). It checks if the current block's timestamp is greater than partyTime and the hodler's balance is greater than 0. If conditions are met, it transfers the hodler's balance to the hodler and emits a Party event with the hodler's address and the amount withdrawn.

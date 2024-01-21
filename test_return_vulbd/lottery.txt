@@ -1,0 +1,7 @@
+Primary functionality: The contract is a simple lottery system where users can make bets and potentially win based on the block number's parity.
+
+1. Lottery, Constructor function to initialize the organizer of the lottery.
+2. Fallback, Fallback function to reject all incoming Ether.
+3. makeBet, Function for users to make a bet, with a simple mechanism to determine if they have won based on the parity of the block number.
+4. getBets, Function to retrieve all bets that have been made, accessible only by the organizer.
+5. destroy, Function to destroy the contract, accessible only by the organizer.

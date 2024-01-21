@@ -1,0 +1,8 @@
+Primary functionality: This contract is a decentralized application for purchasing advertising space. It includes functions for updating the ad price multiple, updating the ad, updating the investor, getting the purchase timestamp ends, and getting the contract balance.
+
+1. withdraw, allows the contract owner to withdraw the contract's balance.
+2. setAdPriceMultiple, allows the contract owner to set the ad price multiple.
+3. updateAd, allows users to update the ad by providing the necessary payment and ad ID.
+4. updateInvestor, allows users to update their investment by providing the necessary payment.
+5. getPurchaseTimestampEnds, returns the timestamp when the ad purchase ends.
+6. getBalance, returns the contract's current balance.

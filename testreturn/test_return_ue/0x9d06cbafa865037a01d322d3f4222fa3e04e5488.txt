@@ -1,0 +1,7 @@
+Primary functionality: The contract is for managing the purchase and sale of tokens.
+
+1. tokens_buy, Allows users to buy tokens by sending Ether to the contract. It calculates the number of tokens to be bought based on the Ether sent, checks the conditions, and transfers the tokens to the buyer. It also sends a portion of the Ether to owner2.
+2. withdraw, Allows the owner to withdraw Ether from the contract balance. The owner can specify the amount to withdraw or withdraw the entire balance.
+3. change_token_price, Allows the owner to change the token price.
+4. change_active, Allows the owner to change the active status of the contract.
+5. onlyOwner, Modifier to restrict access to functions to only the owner of the contract.

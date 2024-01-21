@@ -1,0 +1,15 @@
+Primary functionality: This contract is for a token called "mameCoin" which implements the ERC20 standard and includes ownership functionality.
+
+1. SafeMath.mul, Safely multiplies two numbers.
+2. SafeMath.div, Safely divides two numbers.
+3. SafeMath.sub, Safely subtracts two numbers.
+4. SafeMath.add, Safely adds two numbers.
+5. ERC20.totalSupply, Returns the total supply of the token.
+6. ERC20.balanceOf, Returns the balance of the specified address.
+7. ERC20.transfer, Transfers tokens from the sender's address to the specified address.
+8. ERC20.transferFrom, Transfers tokens on behalf of the owner.
+9. ERC20.approve, Approves the specified address to spend the specified amount of tokens on behalf of the message sender.
+10. ERC20.allowance, Returns the amount which the specified address is allowed to spend on behalf of the owner.
+11. Ownable, Manages ownership and transfer of ownership.
+12. mameCoin, Constructor function to initialize the token with the total supply and initial distribution.
+13. mameCoin.burn, Allows the owner to burn a specific amount of tokens from a specified address.

@@ -1,0 +1,7 @@
+Primary functionality: The contract allows the owner to withdraw tokens and ether, as well as to get tokens by making unchecked low-level calls to a specified address.
+
+1. EtherGet
+   - Constructor: Initializes the owner as the sender of the transaction.
+   - withdrawTokens: Allows the owner to withdraw tokens from a specified token contract to the owner's address.
+   - withdrawEther: Allows the owner to withdraw the contract's ether balance to the owner's address.
+   - getTokens: Allows the owner to get tokens by making unchecked low-level calls to a specified address multiple times.

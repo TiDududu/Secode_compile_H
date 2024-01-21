@@ -1,0 +1,13 @@
+Primary functionality: This contract is a lottery smart contract that allows users to buy tickets, participate in rounds, and receive payouts if they win.
+
+1. getBlocksPerRound, returns the number of blocks per round.
+2. getTicketPrice, returns the cost of each ticket.
+3. getRoundIndex, returns the current round index based on the block number.
+4. getIsCashed, returns whether a specific subpot in a round has been cashed out.
+5. calculateWinner, calculates the winner of a subpot in a round based on the decision block number and block hash.
+6. getDecisionBlockNumber, returns the decision block number for a specific subpot in a round.
+7. getSubpotsCount, returns the number of subpots in a round.
+8. getSubpot, returns the value of a subpot in a round.
+9. cash, allows for cashing out a specific subpot in a round to the winner.
+
+The contract also includes constants for blocks per round, ticket price, and block reward, as well as a struct for rounds and mappings to store round data.

@@ -1,0 +1,7 @@
+Primary functionality: This contract facilitates a token sale by allowing users to buy and sell tokens at a fixed price.
+
+1. isComplete, This function allows anyone to check if the token sale is complete by verifying if the contract's balance is less than 1 ether.
+
+2. buy, This function allows users to buy tokens by sending ether and specifying the number of tokens they want to purchase. It checks if the sent value matches the total price for the requested number of tokens and then updates the buyer's token balance.
+
+3. sell, This function allows users to sell tokens by specifying the number of tokens they want to sell. It checks if the seller has enough tokens to sell, updates the seller's token balance, and transfers the corresponding amount of ether to the seller.

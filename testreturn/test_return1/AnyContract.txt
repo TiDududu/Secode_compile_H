@@ -1,0 +1,6 @@
+Primary functionality: This contract allows users to store numbers and texts, and also perform batch operations to update both numbers and texts simultaneously.
+
+1. add, Allows the caller to add two numbers and store the result in the numbers mapping associated with the caller's address.
+2. write, Allows the caller to store a text in the texts mapping associated with the caller's address.
+3. batchWrite, Allows the caller to update both the numbers and texts mappings associated with the caller's address with new values provided as input.
+4. getBalance, Allows anyone to view the contract's balance.

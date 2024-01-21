@@ -1,0 +1,5 @@
+Primary functionality: The contract allows users to enter a risky game by sending a specific amount of ether. When the balance reaches twice the amount of the oldest entry, the oldest entry is paid out.
+
+1. BigRisk, Constructor function to set the contract owner.
+2. enter, Allows a user to enter the game by sending a specific amount of ether. If the amount is not a multiple of 100 ether, the amount is returned. Otherwise, the user is added to the game and the balance is updated. If the balance reaches twice the amount of the oldest entry, the oldest entry is paid out.
+3. setOwner, Allows the current owner to transfer ownership to a new address. Only the current owner can call this function.

@@ -1,0 +1,18 @@
+Primary functionality: This contract is an implementation of an ERC20 token with additional functionality for setting buy and sell prices, as well as freezing accounts.
+
+1. owned, Constructor to set the owner of the contract.
+2. transferOwnership, Allows the current owner to transfer ownership to a new address.
+3. tokenRecipient, Interface for contracts that want to receive approval.
+4. token, Constructor to initialize the token with initial supply, name, decimals, and symbol.
+5. transfer, Allows the sender to transfer tokens to a specified address.
+6. approve, Allows the sender to approve another address to spend tokens on their behalf.
+7. approveAndCall, Allows the sender to approve another address and call its receiveApproval function in a single transaction.
+8. transferFrom, Allows a contract to transfer tokens from one address to another on behalf of the owner.
+9. fallback function, Prevents accidental sending of ether to the contract.
+10. MoneyChainNetToken, Constructor to initialize the token with additional functionality for setting buy and sell prices, as well as freezing accounts.
+11. sellPrice, Public variable to store the sell price of the token.
+12. buyPrice, Public variable to store the buy price of the token.
+13. frozenAccount, Mapping to store the frozen status of accounts.
+14. FrozenFunds, Event to notify clients when an account is frozen.
+
+The contract implements the standard ERC20 token functions for transferring tokens, approving spending, and transferring tokens on behalf of the owner. Additionally, it provides functionality for setting buy and sell prices for the token and freezing accounts.

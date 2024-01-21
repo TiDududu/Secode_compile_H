@@ -1,0 +1,24 @@
+Primary functionality: This contract is a standard ERC20 token with additional functionalities for pausing, freezing, and ownership management.
+
+1. SafeMath library: Contains functions for safe mathematical operations such as multiplication, division, subtraction, and addition.
+
+2. Ownable contract:
+   - Constructor: Sets the deployer's address as the owner.
+   - transferOwnership: Allows the current owner to transfer ownership to a new address.
+
+3. ERC20 interface: Contains standard ERC20 token functions for balance inquiry, transfer, allowance check, transfer from, and approval.
+
+4. Pausable contract:
+   - pause: Allows the owner to pause the contract, preventing transfers.
+   - unpause: Allows the owner to unpause the contract, enabling transfers.
+
+5. Freezable contract:
+   - freeze: Allows the owner to freeze an account, preventing transfers from the specified address.
+   - unfreeze: Allows the owner to unfreeze a previously frozen account.
+
+6. StandardToken contract:
+   - transfer: Allows token holders to transfer tokens to another address, considering pausing and freezing conditions.
+   - transferFrom: Allows approved addresses to transfer tokens on behalf of the token holder, considering pausing and freezing conditions.
+   - balanceOf: Retrieves the token balance of a specified address.
+   - approve: Allows the token holder to approve an address to spend a specified amount of tokens.
+   - allowance: Retrieves the amount of tokens that an approved address is allowed to spend on behalf of the token holder.

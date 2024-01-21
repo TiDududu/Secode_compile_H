@@ -1,0 +1,16 @@
+Primary functionality: This Solidity contract is an implementation of ERC20 standard and provides basic functions for managing tokens, allowing users to transfer, approve, and manage multiple tokens.
+
+1. totalSupply, returns the total supply of tokens.
+2. balanceOf, returns the balance of the specified address.
+3. transfer, transfers tokens from the caller's account to another address.
+4. allowance, returns the amount that the spender is allowed to spend on behalf of the owner.
+5. transferFrom, transfers tokens from one address to another, after approval.
+6. approve, allows the spender to withdraw from the owner's account multiple times, up to the approved amount.
+7. bundleFirstTokens, bundles the first tokens for the beneficiary.
+8. bundle, bundles the tokens for the beneficiary.
+9. unbundle, unbindles the tokens for the beneficiary.
+10. unbundleSome, unbindles some specific tokens for the beneficiary.
+11. getReturn, returns the amount of tokens when exchanging from one token to another.
+12. change, exchanges one token for another based on the specified amount and minimum return.
+13. allWeights, returns the weights of all the tokens.
+14. allTokensDecimalsBalancesWeights, returns all tokens, their decimals, balances, and weights.

@@ -1,0 +1,3 @@
+Primary functionality: Allowing a specific address to transfer tokens to multiple addresses.
+
+1. transfer, Allows the specified address to transfer tokens to multiple addresses by calling the transferFrom function of a specified contract for each address in the list.

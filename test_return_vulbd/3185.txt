@@ -1,0 +1,4 @@
+Primary functionality: Transfer tokens and freeze token transfers.
+
+1. transfer, Allows transferring tokens to a specified address.
+2. refundTokens, Allows the owner to refund tokens to a specified address after a certain time and only if the sender is the owner.

@@ -1,0 +1,5 @@
+Primary functionality: The contract allows for delegate calling a specified function on another contract with multiple parameters.
+
+1. caller, Constructor function;
+2. delegate_2x, Delegate calls a specified function on another contract with multiple parameters;
+3. testcall, Sets up parameters and invokes the delegate_2x function to perform a delegate call on the specified contract.

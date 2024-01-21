@@ -1,0 +1,19 @@
+Primary functionality: This contract is a multisignature wallet that allows multiple parties to agree on transactions before execution.
+
+1. MultiSigWallet, the constructor function that sets the initial owners and required number of confirmations.
+2. addOwner, allows adding a new owner to the wallet. The transaction has to be sent by the wallet.
+3. removeOwner, allows removing an owner from the wallet. The transaction has to be sent by the wallet.
+4. changeRequirement, allows changing the required number of confirmations for transactions.
+5. submitTransaction, allows submitting a new transaction to the wallet.
+6. confirmTransaction, allows an owner to confirm a transaction.
+7. revokeConfirmation, allows an owner to revoke their confirmation for a transaction.
+8. executeTransaction, allows executing a confirmed transaction.
+9. getConfirmationCount, retrieves the number of confirmations for a transaction.
+10. getTransactionCount, retrieves the total number of transactions.
+11. getOwners, retrieves the list of owners.
+12. getConfirmations, retrieves the list of owners who confirmed a transaction.
+13. isConfirmed, checks if a transaction is confirmed.
+14. isOwner, checks if an address is an owner of the wallet.
+15. getTransactionIds, retrieves a list of transaction IDs.
+16. getTransactionById, retrieves details of a transaction by ID.
+17. required, retrieves the required number of confirmations.

@@ -1,0 +1,15 @@
+Primary functionality: This contract provides a set of functions for managing authorization and execution, as well as mathematical operations.
+
+1. DSNote, This contract defines an event LogNote and a modifier note. The modifier logs the function signature, sender address, function parameters, value, and data before executing the function.
+
+2. ERC20, This contract defines the ERC20 standard functions for managing tokens, including totalSupply, balanceOf, allowance, transfer, transferFrom, and approve. It also emits events for Transfer and Approval.
+
+3. DSAuthority, This contract defines a function canCall to check if a specific function can be called by a given source and destination address.
+
+4. DSAuthEvents, This contract defines events for LogSetAuthority and LogSetOwner.
+
+5. DSAuth, This contract provides functionality for setting owner and authority, and includes modifiers for authorization checks. It also defines an assert function for internal use.
+
+6. DSExec, This contract provides functions for executing calls to other contracts, including tryExec and exec with various parameter combinations.
+
+7. DSMath, This contract provides mathematical operations such as add, sub, mul, div, min, and max, with assertions for overflow and underflow prevention.

@@ -1,0 +1,11 @@
+Primary functionality: This contract is a simple game where players can wager a specific amount of Ether and play to win or lose based on a randomly generated number. The contract also allows for donations to a designated address.
+
+1. onlyOwner, Restricts access to the function to only the owner of the contract.
+2. isOpenToPublic, Ensures that the game is open to the public for participation.
+3. onlyRealPeople, Ensures that the function is called by a externally-owned account and not a contract.
+4. onlyPlayers, Ensures that the caller has already placed a wager.
+5. Wager, Allows players to place a bet by sending a specific amount of Ether.
+6. play, Determines the outcome of the game for a player and handles the payouts.
+7. donate, Allows users to donate Ether to a designated address.
+8. payout, Handles the transfer of Ether to the winner of the game.
+9. donateToWhale, Handles the transfer of Ether to the designated whale address for donations.

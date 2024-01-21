@@ -1,0 +1,6 @@
+Primary functionality: This contract is a simple implementation of a loan default management system. The primary functionality is to manage a list of loan defaulters and allow authorized users to add and retrieve information about defaulters.
+
+1. LaolaiManage, Constructor function to set the contract owner.
+2. addLaolai, Allows the owner to add a defaulter to the list by providing the defaulter's ID card and associated value.
+3. judgeLaolai, Allows anyone to check if a defaulter exists in the list by providing the defaulter's ID card and paying a specified price.
+4. hello, Returns a greeting message "hello".

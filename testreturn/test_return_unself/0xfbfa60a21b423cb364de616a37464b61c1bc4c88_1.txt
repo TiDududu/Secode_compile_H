@@ -1,0 +1,6 @@
+Primary functionality: This contract is for a fair dice game that pays out Ether. It uses hybrid commit-reveal + block hash random number generation to ensure fairness and transparency.
+
+1. Constants are defined for house edge, minimum bet for jackpot participation, jackpot chance and fee, minimum and maximum bets, modulo, mask modulo, bet mask, bet expiration blocks, and a dummy address.
+2. The contract includes ownership transfer functionality, max bet profit capping, secret signer address, jackpot fund, locked funds for potential payouts, and a structure representing a single bet.
+
+The contract is designed to facilitate fair and transparent dice games with Ether payouts. It includes mechanisms for ensuring fairness, managing bets, and handling jackpot funds.

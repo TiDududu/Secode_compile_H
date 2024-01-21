@@ -1,0 +1,12 @@
+Primary functionality: This contract is an implementation of the ERC20 standard for a basic token called RemiCoin. It also includes functionality for transferring tokens, checking balances, and managing ownership.
+
+1. balanceOf, Returns the balance of a specified address.
+2. transfer, Transfers tokens from the sender's address to a specified address.
+3. transferFrom, Transfers tokens from a specified address to another specified address, with approval.
+4. approve, Allows a specified spender to withdraw from the sender's account multiple times, up to the specified amount.
+5. allowance, Checks the amount of tokens that an owner allowed to a spender.
+6. Owner, Constructor for assigning an address for the owner property.
+7. onlyOwner, Modifier to restrict access to only the owner of the contract.
+8. transferOwnership, Allows the owner to transfer ownership to a new address.
+
+The contract also includes event triggers for token transfers and approval calls, as well as functionality for freezing accounts and managing the initial supply and information of the token.

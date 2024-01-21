@@ -1,0 +1,9 @@
+Primary functionality: The contract is a game where agents can pay to become the ruler of the throne. The contract maintains a throne with a current monarch and a wizard who collects fees during gaps in succession.
+
+1. KingOfTheEtherThrone: Constructor function to create a new throne with the creator as the wizard and the first ruler. It sets up default values.
+2. numberOfMonarchs: View function to return the number of past monarchs.
+3. ThroneClaimed: Event triggered when the throne is claimed, providing details of the usurper's address, name, and the new claim price.
+4. fallback: Fallback function triggered by simple transactions, allowing the sender to claim the throne with a desired name.
+5. claimThrone: Function for claiming the throne for the given name by paying the current claim fee. It handles the payment and refund logic based on the value paid.
+
+The contract also includes various state variables and modifiers for internal use, such as the Monarch struct, wizardAddress, claim price adjustments, and past monarchs list.

@@ -1,0 +1,3 @@
+Primary functionality: This contract allows the calling of a delegate function to set the value of variable n in another contract.
+
+1. delegatecallSetN, This function takes an address and a uint as input parameters and uses delegatecall to call the setN function in the contract at the given address, passing the uint value as an argument. If the delegatecall is unsuccessful, it reverts the transaction.

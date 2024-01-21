@@ -1,0 +1,13 @@
+Primary functionality: This contract implements a basic ERC20 token with additional SafeMath library for arithmetic operations.
+
+1. SafeMath.mul, Multiplies two numbers, throws on overflow.
+2. SafeMath.div, Integer division of two numbers, truncating the quotient.
+3. SafeMath.sub, Subtracts two numbers, throws on overflow.
+4. SafeMath.add, Adds two numbers, throws on overflow.
+5. balanceOf, Retrieves the balance of the specified address.
+6. transfer, Transfers tokens from the sender's address to a specified address.
+7. transferFrom, Transfers tokens from a specified address to another address based on approval.
+8. approve, Approves a specified address to spend a specified amount of tokens on behalf of the owner.
+9. allowance, Retrieves the amount of tokens that an owner allowed to be spent by a spender.
+
+The contract also includes an event for Transfer and Approval, and a constant for MAX_UINT256. Additionally, it implements the ERC20 standard functions and uses the SafeMath library for arithmetic operations.

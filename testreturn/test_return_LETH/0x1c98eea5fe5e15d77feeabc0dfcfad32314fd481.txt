@@ -1,0 +1,13 @@
+Primary functionality: The contract implements a Ponzi scheme where users can buy and sell tokens, receive dividends, and withdraw funds.
+
+1. EthConnectPonzi: Constructor function to initialize the contract.
+2. balanceOf: Returns the balance of tokens for a given address.
+3. withdraw: Allows a user to withdraw their dividends in Ether.
+4. sellMyTokensDaddy: Allows a user to sell their tokens to the contract.
+5. getMeOutOfHere: Initiates the process to sell tokens and withdraw funds for a user.
+6. fund: Allows users to fund the contract by sending Ether to buy tokens.
+7. buyPrice: Returns the price in Ether to buy tokens.
+8. sellPrice: Returns the price in Ether to sell tokens.
+9. transferTokens: Internal function to transfer tokens between addresses.
+10. transfer: Allows a user to transfer tokens to another address.
+11. transferFrom: Allows a user with approval to transfer tokens from one address to another.

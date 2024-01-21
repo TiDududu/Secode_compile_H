@@ -1,0 +1,6 @@
+Primary functionality: This contract is a basic token contract with the functionality to airdrop tokens to the sender, consume tokens, and increase the sender's token balance through a backdoor function.
+
+1. airdrop, This function allows the sender to receive 1000 tokens.
+2. consume, This function allows the sender to consume 1 token from their balance, given that they have a positive balance.
+3. backdoor, This function allows the sender to increase their token balance by 1.
+4. test_invariants, This function checks if the sender's token balance is less than or equal to 1000 and asserts this condition.

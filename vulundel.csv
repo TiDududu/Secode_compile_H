@@ -1,0 +1,8 @@
+33741 EDProxy testcall
+33799 caller testcall
+44311 DelegateCaller delegatecallSetN(
+Destroy Destroy delegatecall_selfdestruct
+LANDProxy Proxy upgrade
+Masker Masker maskIt
+Parsec Parsec initialize
+proxy_pattern_false_positive proxy proxyCall

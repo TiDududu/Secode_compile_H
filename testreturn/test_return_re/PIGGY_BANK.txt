@@ -1,0 +1,9 @@
+Primary functionality: This contract is a simple piggy bank that allows users to deposit and withdraw funds, while logging all transactions.
+
+1. PIGGY_BANK, Constructor function that initializes the contract with the address of the Log contract.
+2. Put, Allows users to deposit funds into the piggy bank and logs the transaction.
+3. Collect, Allows users to withdraw funds from the piggy bank if the balance is sufficient and logs the transaction.
+4. fallback, Allows users to deposit funds into the piggy bank by sending Ether directly to the contract.
+
+The Log contract:
+1. AddMessage, Logs messages containing the sender's address, value, and data into a history array.

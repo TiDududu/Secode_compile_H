@@ -1,0 +1,11 @@
+Primary functionality: This Solidity contract is for a token called HNContract with the symbol "NN".
+
+1. balanceOf, returns the balance of the specified address.
+2. transfer, allows the sender to transfer tokens to a specified address.
+3. transferFrom, allows a third party to transfer tokens from one address to another.
+4. approve, allows the owner to approve a third party to spend a specified amount of tokens from the owner's address.
+5. allowance, returns the remaining number of tokens that a third party is allowed to spend from the owner's address.
+6. inflat, allows the contract creator to increase the total token supply.
+7. burn, allows the token owner to burn a specified amount of tokens from their own address.
+
+The contract also includes events for Transfer, Approval, Burn, and Inflat.

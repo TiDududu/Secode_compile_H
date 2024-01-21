@@ -1,0 +1,4 @@
+Primary functionality: This contract is a simple DAO (Decentralized Autonomous Organization) that allows users to deposit and withdraw funds.
+
+1. withdrawAll, Allows a user to withdraw all their credited funds from the contract. It subtracts the credited amount from the contract's balance, transfers the credited amount to the user, and sets the user's credit to 0.
+2. deposit, Allows a user to deposit funds into the contract. It credits the user's account with the deposited amount and adds the deposited amount to the contract's balance.

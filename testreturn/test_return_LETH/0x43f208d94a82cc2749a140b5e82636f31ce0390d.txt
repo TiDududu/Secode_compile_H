@@ -1,0 +1,17 @@
+Primary functionality: This contract provides a set of functions for interacting with the Oraclize service, which allows for the integration of external data into Ethereum smart contracts.
+
+1. query, initiates a query to the Oraclize service with a specified timestamp, datasource, and argument.
+2. query_withGasLimit, similar to query but allows specifying a gas limit for the query.
+3. query2, initiates a query with two arguments to the Oraclize service.
+4. query2_withGasLimit, similar to query2 but allows specifying a gas limit for the query.
+5. queryN, initiates a query with multiple arguments to the Oraclize service.
+6. queryN_withGasLimit, similar to queryN but allows specifying a gas limit for the query.
+7. getPrice, retrieves the price for a specified datasource.
+8. getPrice, retrieves the price for a specified datasource with a specified gas limit.
+9. useCoupon, allows the use of a coupon code for Oraclize services.
+10. setProofType, sets the proof type for authenticity verification.
+11. setConfig, sets a configuration for Oraclize.
+12. setCustomGasPrice, sets a custom gas price for Oraclize queries.
+13. randomDS_getSessionPubKeyHash, retrieves the session public key hash for the random datasource.
+
+Additionally, the contract includes modifiers for Oraclize API and coupon usage, as well as constants and an address resolver interface for Oraclize.

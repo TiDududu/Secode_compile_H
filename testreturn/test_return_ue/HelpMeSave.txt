@@ -1,0 +1,8 @@
+Primary functionality: This contract is a savings wallet that enforces the owner to save until a specific goal is reached.
+
+1. MyTestWallet7, Constructor function to set the owner of the contract.
+2. deposit, Allows users to deposit funds into the contract.
+3. fallback, Fallback function to call the deposit function when receiving ether.
+4. withdraw, Allows the owner to withdraw funds from the contract once the savings goal is reached.
+5. noone_else, Modifier to restrict the withdraw function to only the owner.
+6. recovery, Allows the owner to set a recovery procedure for accessing funds in case of an emergency. It takes a password and a return address, and if the hash of the return address matches a specific value, the contract self-destructs and sends the funds to the provided return address.

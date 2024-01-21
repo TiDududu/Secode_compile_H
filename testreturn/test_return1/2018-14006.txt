@@ -1,0 +1,17 @@
+Primary functionality: This contract implements an ERC20 and ERC223 token standard with the name "NEO Genesis Token" (NGT), symbol "NGT", and 18 decimals. It also includes functionalities for token transfers, approvals, and balance inquiries.
+
+1. name, Returns the name of the token.
+2. symbol, Returns the symbol of the token.
+3. decimals, Returns the number of decimals the token uses.
+4. totalSupply, Returns the total token supply.
+5. balanceOf, Returns the token balance of a specified address.
+6. transfer, Transfers tokens from the sender's account to a specified address.
+7. multipleTransfer, Transfers tokens to multiple addresses.
+8. batchTransfer, Transfers tokens to multiple addresses with different values.
+9. transferFrom, Transfers tokens on behalf of the owner given approval.
+
+The contract also includes events for Transfer and Approval.
+
+Additionally, the contract implements the ERC223 token standard with additional transfer functions and events.
+
+Note: The code provided is incomplete, and the last line of the transferFrom function is missing.

@@ -1,0 +1,11 @@
+Primary functionality: Transfer ownership and manage tokens of Global Gold Cash.
+
+1. transferOwnership, Allows the current owner to transfer ownership of the contract to a new address.
+2. destruct, Allows the owner to destroy the contract and sends all remaining funds to the owner's address.
+3. _transfer, Internal function to transfer tokens from one address to another.
+4. transfer, Allows the sender to transfer tokens to a specified address.
+5. transferFrom, Allows an approved address to transfer tokens from one address to another.
+6. approve, Allows an address to approve another address to spend a specified amount of tokens from the sender's address.
+7. approveAndCall, Allows an address to approve another address and call a function on the approved address.
+8. burn, Allows the sender to burn a specified amount of their tokens.
+9. burnFrom, Allows an approved address to burn a specified amount of tokens from a specified address.

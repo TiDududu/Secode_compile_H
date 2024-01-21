@@ -1,0 +1,4 @@
+Primary functionality: The contract allows users to claim a bonus and withdraw their rewards.
+
+1. withdrawReward, allows the recipient to withdraw their rewards.
+2. getFirstWithdrawalBonus, allows the recipient to claim a bonus for their first withdrawal.

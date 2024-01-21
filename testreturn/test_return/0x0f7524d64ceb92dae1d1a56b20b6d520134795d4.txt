@@ -1,0 +1,10 @@
+Primary functionality: This contract is a version of Proof of Weak Hands. It is a pyramid scheme-like smart contract where users can buy/sell tokens, withdraw their dividends, and fund the contract. The primary functionality is to enable users to interact with the contract through buying and selling tokens, withdrawing dividends, and funding the contract.
+
+1. balanceOf, Returns the balance of the specified address.
+2. withdraw, Allows the user to withdraw their dividends.
+3. sellMyTokensDaddy, Sells the user's tokens triggering the internal sell function.
+4. getMeOutOfHere, Calls sellMyTokensDaddy and withdraw to help user withdraw all dividends and leave the contract.
+5. fund, Allows the user to fund the contract by buying tokens for ether.
+6. buyPrice, Returns the price in tokens for 1 finney.
+7. sellPrice, Returns the price in ether for 1 finney of tokens.
+8. transferTokens, Internal function for transferring tokens from one address to another.

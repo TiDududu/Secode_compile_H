@@ -1,0 +1,16 @@
+Primary functionality: This contract is for a token called QPay. The primary functionality is to distribute tokens to users who send Ether to the contract address during the distribution period.
+
+1. SafeMath.mul, Safely multiplies two numbers and prevents overflow.
+2. SafeMath.div, Safely divides two numbers and prevents division by zero.
+3. SafeMath.sub, Safely subtracts one number from another and prevents underflow.
+4. SafeMath.add, Safely adds two numbers and prevents overflow.
+
+5. QPay, Constructor function to set the owner of the contract.
+
+6. fallback, Fallback function to distribute tokens to users who send Ether to the contract address during the distribution period.
+
+7. onlyOwner, Modifier to restrict access to the owner of the contract.
+
+8. SetupQPY, Function to set up the QPay token with initial parameters such as token name, symbol, distribution settings, and receiver addresses. Can only be called by the owner and can only be called once.
+
+The contract also includes events for Transfer, Approval, and Burn, as well as various state variables and mappings for token balances, allowances, and distribution status.

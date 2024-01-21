@@ -1,0 +1,10 @@
+Primary functionality: This contract manages access control and provides functionality for transferring ownership and pausing/unpausing certain operations.
+
+1. setAdmin, Allows the current admin to transfer the admin role to a new address.
+2. doPause, Allows the admin to pause certain operations.
+3. doUnpause, Allows the admin to unpause certain operations.
+4. setService, Allows the admin or the current service address to set a new service address.
+5. setFinance, Allows the admin or the current finance address to set a new finance address.
+6. withdraw, Allows the finance address or the admin to withdraw funds to a specified address or the finance address.
+
+The contract also includes interfaces for interacting with other ERC20 tokens and specific interfaces for interacting with other contracts.

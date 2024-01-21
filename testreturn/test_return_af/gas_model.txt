@@ -1,0 +1,3 @@
+Primary functionality: The contract contains a function to check gas consumption.
+
+1. check, This function retrieves the amount of gas remaining before and after executing a simple operation and asserts that the gas remaining after the operation is greater than the gas remaining before the operation.

@@ -1,0 +1,9 @@
+Primary functionality: The contract allows users to deposit and withdraw ether while logging the transactions.
+
+1. ETH_VAULT, Constructor function to initialize the contract with the address of the Log contract.
+2. Deposit, Allows users to deposit ether into the vault, with a minimum deposit requirement of 1 ether. It updates the user's balance and logs the deposit.
+3. CashOut, Allows users to withdraw a specified amount of ether from their balance, transferring the amount to the user's address and updating the balance while logging the withdrawal.
+4. fallback, Fallback function to receive ether.
+
+Log contract:
+1. AddMessage, Records a message containing the sender's address, value, and data into the transaction history.

@@ -1,0 +1,13 @@
+Primary functionality: The contract allows the owner to manage and distribute tokens to team members and transfer ownership.
+
+1. Ownable - This contract defines an owner and provides a modifier to restrict access to only the owner. It also includes a function to transfer ownership to a new address.
+
+2. transferOwnership - This function allows the current owner to transfer ownership to a new address.
+
+3. TokenContract - This is an interface for a token contract, defining functions for transferring tokens and checking token balances.
+
+4. Vault - This contract inherits from Ownable and TokenContract. It includes functionality to release tokens to team members and transfer any remaining tokens to the owner. It also allows the owner to add team members and their token allocations.
+
+5. releaseTokens - This function releases tokens to team members and transfers any remaining tokens to the owner before self-destructing the contract.
+
+6. addMembers - This function allows the owner to add team members and their token allocations to the team array.

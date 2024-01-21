@@ -1,0 +1,21 @@
+Primary functionality: This Solidity code defines several contracts for creating and managing tokens, a token exchange, and account levels.
+
+1. SafeMath, contains functions for safe mathematical operations to prevent overflow and underflow:
+   - safeMul: Safely multiplies two numbers.
+   - safeSub: Safely subtracts one number from another.
+   - safeAdd: Safely adds two numbers.
+   - assert: Internal function to assert a condition.
+
+2. Token, an interface for ERC20 tokens, containing functions for total supply, balance retrieval, transfer, transfer approval, and allowance check.
+
+3. StandardToken, a contract implementing the Token interface with additional functions for transfer, transferFrom, balance retrieval, approval, and allowance check.
+
+4. ReserveToken, a contract implementing StandardToken and SafeMath, with functions for creating and destroying tokens, and a designated minter.
+
+5. AccountLevels, an interface for retrieving account levels.
+
+6. AccountLevelsTest, a contract implementing AccountLevels with functions to set and retrieve account levels.
+
+7. AZExchange, a contract implementing SafeMath, for managing a token exchange with functions for order creation and management, and fee settings.
+
+The code defines various contracts for token management, an exchange, and account level management. It includes safe mathematical operations to prevent common vulnerabilities like overflow and underflow.

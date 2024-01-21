@@ -1,0 +1,7 @@
+Primary functionality: This contract is a standard ERC20 token with additional functionalities for transferring tokens, checking balances, and approving token transfers.
+
+1. isToken, returns whether the contract is a token or not;
+2. transfer, allows the sender to transfer tokens to a specified address;
+3. transferFrom, allows a third party to transfer tokens from one address to another;
+4. balanceOf, returns the token balance of a specified address;
+5. approve, allows the owner to approve a third party to spend a specified amount of tokens on their behalf.

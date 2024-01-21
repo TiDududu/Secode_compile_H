@@ -1,0 +1,25 @@
+Primary functionality: This contract contains various internal functions for safe mathematical operations, a controlled modifier for access control, a haltable mechanism for emergency stop, and a pricing mechanism for token allocation.
+
+1. safeMul, Safely multiplies two unsigned integers.
+2. safeDiv, Safely divides two unsigned integers.
+3. safeSub, Safely subtracts one unsigned integer from another.
+4. safeAdd, Safely adds two unsigned integers.
+5. max64, Returns the maximum of two uint64 numbers.
+6. min64, Returns the minimum of two uint64 numbers.
+7. max256, Returns the maximum of two uint256 numbers.
+8. min256, Returns the minimum of two uint256 numbers.
+9. assert, Internal function to throw an error if the assertion is false.
+10. onlyController, Modifier to restrict access to the controller.
+11. Controlled, Contract to manage ownership and transfer of control.
+12. changeOwner, Function to change the controller/owner of the contract.
+13. acceptOwnership, Function to accept the ownership transfer.
+14. halt, Function to halt the contract in an emergency.
+15. unhalt, Function to resume normal operation after an emergency.
+16. stopInEmergency, Modifier to stop certain functions during an emergency.
+17. onlyInEmergency, Modifier to allow certain functions only during an emergency.
+18. PricingMechanism, Contract containing a pricing mechanism for token allocation.
+19. setPricing, Function to set the pricing tiers for token allocation.
+20. allocateTokensInternally, Internal function to allocate tokens based on deposited ethers.
+21. DAOController, Contract to manage access control for DAO.
+
+The contract also includes a SphereTokenFactory interface and a struct for PriceTier within the PricingMechanism contract. The DAOController contract is missing the closing bracket for the onlyDAO modifier.

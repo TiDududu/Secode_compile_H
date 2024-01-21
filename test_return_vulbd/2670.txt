@@ -1,0 +1,10 @@
+Primary functionality: Implement a bidding contract for a value of twenty dollars.
+
+1. bid, Allows users to place a bid by sending a specified amount of Ether. If the bid is higher than the current highest bid, the previous highest bid is replaced, and the second highest bid is updated accordingly. The bidding period is extended by 10 blocks.
+2. withdraw, Allows users to withdraw their balance from the contract.
+3. winnerWithdraw, Allows the highest bidder to withdraw the game value after the bidding period has ended.
+4. ownerWithdraw, Allows the owner to withdraw the remaining balance after the bidding period has ended.
+5. getMyBalance, Returns the balance of the caller.
+6. getContractBalance, Returns the contract's current balance.
+7. biddingClosed, Returns a boolean indicating whether the bidding period has ended.
+8. fallback function, Allows users to call the bid function by sending Ether to the contract.

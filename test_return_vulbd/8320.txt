@@ -1,0 +1,18 @@
+Primary functionality: The contract facilitates the sale and transfer of a token called "ESSENTIA Public Engagement" (ESSENTIA_PE) by allowing users to buy tokens with Ether, withdraw tokens after the public sale ends, and perform emergency withdrawals by the owner.
+
+1. SafeMath.mul, Safely multiplies two uint256 numbers.
+2. SafeMath.div, Safely divides two uint256 numbers.
+3. SafeMath.sub, Safely subtracts two uint256 numbers.
+4. SafeMath.add, Safely adds two uint256 numbers.
+5. Ownable, Manages ownership and transfer of ownership.
+6. TokenCHK.balanceOf, Retrieves the balance of tokens for a given address.
+7. ESSENTIA_PE, Manages the sale and transfer of ESSENTIA Public Engagement tokens.
+8. setFWDaddrETH, Allows the owner to set the address for forwarding Ether.
+9. setGenesis, Allows the owner to set the address for the ESSENTIA genesis token.
+10. setMaxCap, Allows the owner to set the maximum cap for the token sale.
+11. setPrice, Allows the owner to set the price of the tokens.
+12. setPubEnd, Allows the owner to set the end time for the public sale.
+13. buy, Allows users to buy tokens with Ether during the public sale.
+14. withdrawPUB, Allows users to withdraw tokens after the public sale ends.
+15. transferBuy, Internal function to transfer tokens to the buyer.
+16. EMGwithdraw, Allows the owner to perform an emergency withdrawal after the public sale ends.

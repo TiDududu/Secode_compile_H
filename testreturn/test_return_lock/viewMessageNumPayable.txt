@@ -1,0 +1,9 @@
+Primary functionality: This contract allows the owner to set and retrieve messages along with a special number, and it also tracks the amount of ether sent with each transaction.
+
+1. setNewMessage(string newMsg) - Allows the owner to set a new message along with the amount of ether sent with the transaction.
+2. setNewMessageNumber(string m, uint num) - Allows the owner to set a new message and a special number, with a requirement that the sent value is greater than or equal to the specified price.
+3. setNewMessageNumber2(string m, uint num) - Allows the owner to set a new message and a special number, without any requirement for the sent value.
+4. setNewMessage2(string meg) - Allows the owner to set a new message (message2) along with the amount of ether sent with the transaction.
+5. getMessage() - Retrieves the current message.
+6. getMessage2() - Retrieves the second message (message2).
+7. getSpecialNum() - Retrieves the special number.

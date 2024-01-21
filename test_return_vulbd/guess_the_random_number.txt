@@ -1,0 +1,12 @@
+Primary functionality: This contract is a part of a challenge where the objective is to guess a random number. The contract contains functions for initializing the challenge, checking if the challenge is complete, and submitting a guess for the random number.
+
+1. GuessTheRandomNumberChallenge
+   - This is the constructor function that initializes the contract and sets the answer by hashing the block hash and current timestamp.
+
+2. isComplete
+   - This function is a view function that returns a boolean indicating whether the challenge is complete, i.e., if the contract balance is 0.
+
+3. guess
+   - This function allows a player to submit a guess for the random number by providing a uint8 input. If the guess matches the answer, the player receives 2 ether as a reward.
+
+Note: The contract is vulnerable to a randomness manipulation attack, as mentioned in the comments.

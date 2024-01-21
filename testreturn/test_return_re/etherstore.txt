@@ -1,0 +1,5 @@
+Primary functionality: This contract allows users to deposit and withdraw Ether with certain limits and restrictions.
+
+1. depositFunds, Functionality: Allows users to deposit Ether into their account by adding the deposited value to their balance.
+
+2. withdrawFunds, Functionality: Allows users to withdraw a specified amount of Ether from their account, given that the withdrawal amount is within the balance, within the withdrawal limit, and after a certain time period has passed. If all conditions are met, the specified amount is transferred to the user's address, and the balance and last withdrawal time are updated accordingly.

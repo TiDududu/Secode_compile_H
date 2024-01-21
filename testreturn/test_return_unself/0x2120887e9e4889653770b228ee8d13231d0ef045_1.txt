@@ -1,0 +1,14 @@
+Primary functionality: The contract implements a standard ERC20 token with functionalities for transferring tokens, approving spending, and checking balances.
+
+1. SafeMath.mul, Safely multiplies two numbers and prevents overflow.
+2. SafeMath.div, Safely divides two numbers.
+3. SafeMath.sub, Safely subtracts one number from another and prevents underflow.
+4. SafeMath.add, Safely adds two numbers and prevents overflow.
+5. Ownable, Manages ownership of the contract and provides functionality to transfer ownership.
+6. renounceOwnership, Allows the current owner to renounce ownership of the contract.
+7. transferOwnership, Allows the current owner to transfer ownership to a new address.
+8. Pausable, Implements an emergency stop mechanism to pause and unpause the contract.
+9. pause, Allows the owner to pause the contract.
+10. unpause, Allows the owner to unpause the contract.
+11. ERC20, Interface for ERC20 standard functions such as totalSupply, balanceOf, allowance, transfer, approve, and transferFrom.
+12. StandardToken, Implements the standard ERC20 token with functionalities for transferring tokens, approving spending, and checking balances.

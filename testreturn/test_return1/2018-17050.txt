@@ -1,0 +1,29 @@
+Primary functionality: This contract implements a token system with the ability to transfer tokens, approve spending, and handle ownership transfer.
+
+1. owned, Constructor; It initializes the owner variable with the address of the contract creator.
+
+2. onlyOwner, Modifier; It restricts access to functions to only the owner of the contract.
+
+3. transferOwnership, Function; It allows the current owner to transfer ownership to a new address.
+
+4. tokenRecipient, Interface; It defines a function signature for a token recipient.
+
+5. token, Constructor; It initializes the token with initial supply, name, decimals, and symbol.
+
+6. transfer, Function; It allows the sender to transfer tokens to a specified address.
+
+7. approve, Function; It allows the owner to approve another address to spend tokens on their behalf.
+
+8. approveAndCall, Function; It approves an address to spend tokens and then calls a function on the approved contract.
+
+9. transferFrom, Function; It allows a contract to transfer tokens from one address to another on behalf of the owner.
+
+10. unnamed, Function; It prevents accidental sending of ether to the contract.
+
+11. PolyAi, Constructor; It initializes the PolyAi contract and inherits the owned and token contracts.
+
+12. frozenAccount, Public Variable; It maintains a mapping of addresses to their frozen status.
+
+13. FrozenFunds, Event; It notifies clients when an account is frozen or unfrozen.
+
+The primary functionality is to create a token system with ownership control and the ability to transfer tokens between addresses. Additionally, it provides functionality to approve spending and handle frozen accounts.

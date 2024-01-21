@@ -1,0 +1,14 @@
+Primary functionality: This contract is for creating a standard token with basic functionalities such as transferring tokens, checking balances, approving token transfers, and checking allowances.
+
+1. totalSupply, returns the total amount of tokens.
+2. balanceOf, returns the balance of the specified address.
+3. transfer, sends tokens to the specified address from the sender's account.
+4. transferFrom, sends tokens from one address to another if approved by the sender.
+5. approve, approves an address to spend a specified amount of tokens from the sender's account.
+6. allowance, checks the remaining tokens allowed to be spent by a spender from the owner's account.
+
+The contract also includes events for Transfer and Approval.
+
+Additionally, it includes a StandardToken contract that extends the Token contract and implements the transfer, transferFrom, balanceOf, approve, and allowance functions with additional checks and mappings for balances and allowances.
+
+Lastly, there is a GymToken contract that extends the StandardToken contract and includes a fallback function to reject Ether transfers and a kill function to self-destruct the contract if called by the owner.

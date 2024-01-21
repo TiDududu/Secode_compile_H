@@ -1,0 +1,15 @@
+Primary functionality: The contract is designed to manage referral balances and ownership control.
+
+1. SafeMath.mul, Safely multiplies two numbers, reverts on overflow.
+2. SafeMath.div, Safely divides two numbers, reverts on division by zero.
+3. SafeMath.sub, Safely subtracts two numbers, reverts on overflow.
+4. SafeMath.add, Safely adds two numbers, reverts on overflow.
+5. Ownable.constructor, Sets the original owner of the contract to the sender account.
+6. Ownable.owner, Returns the address of the owner.
+7. Ownable.onlyOwner, Throws if called by any account other than the owner.
+8. Ownable.isOwner, Returns true if the caller is the owner of the contract.
+9. Ownable.transferOwnership, Allows the current owner to transfer control of the contract to a newOwner.
+10. Ownable._transferOwnership, Transfers control of the contract to a newOwner.
+11. ReferStorage.constructor, Initializes the ReferStorage contract with an owner and sets up mappings for referral balances and ownership control.
+12. ReferStorage.onlyOwnerOrWhitelist, Modifier allowing only the owner or whitelisted addresses to access certain functions.
+13. ReferStorage.onlyParentContract, Modifier allowing only the parent contract or owner to access certain functions.

@@ -1,0 +1,10 @@
+Primary functionality: The contract is designed to manage a token bank where users can deposit and withdraw tokens and ether.
+
+1. changeOwner, Allows the current owner to change the owner of the contract to a new address.
+2. confirmOwner, Allows the new owner to confirm the ownership change.
+3. WithdrawToken, Allows the owner to withdraw tokens to a specified address.
+4. initTokenBank, Initializes the token bank with the owner and minimum deposit amount.
+5. Deposit, Allows users to deposit ether into the token bank.
+6. WitdrawTokenToHolder, Allows the owner to withdraw tokens to a specific holder's address.
+7. WithdrawToHolder, Allows the owner to withdraw ether to a specified address from the token bank.
+8. Bal, Returns the balance of the contract in terms of ether.

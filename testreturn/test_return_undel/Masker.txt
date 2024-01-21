@@ -1,0 +1,8 @@
+Primary functionality: The contract allows the owner to receive Ether and delegate calls to transfer tokens, as well as update the owner's address.
+
+1. Constructor, sets the contract deployer as the owner.
+2. Fallback function, allows the contract to receive Ether and delegate the received Ether to the owner.
+3. maskIt, delegates a call to transfer tokens to the specified address with the specified value.
+4. update, allows the owner to update the owner's address.
+
+The contract primarily allows the owner to receive Ether and delegate calls to transfer tokens, as well as update the owner's address.

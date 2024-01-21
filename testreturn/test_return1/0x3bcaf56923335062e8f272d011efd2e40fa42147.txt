@@ -1,0 +1,8 @@
+Primary functionality: The contract implements a token system with the functionality to transfer tokens, withdraw dividends, and buy tokens.
+
+1. transfer, Allows the sender to transfer tokens to a specified address.
+2. transferFrom, Allows a third party to transfer tokens from one address to another, given the necessary allowance.
+3. dividends, Returns the amount of dividends available for a specific address.
+4. withdraw, Allows an address to withdraw their available dividends.
+5. reserve, Returns the reserve amount of the contract.
+6. buy, Allows an address to buy tokens by sending ether to the contract.

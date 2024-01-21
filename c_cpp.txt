@@ -1,0 +1,19 @@
+0 CWE-189 DoS Exec Code Overflow B
+1 CWE-94 Exec Code A
+2 CVE-2010-2060 Exec Code A
+50 CWE-119 DoS Overflow B
+51 CVE-2012-1146 DoS A
+52 CWE-20 DoS A
+53 CVE-2012-1107 DoS A
+82 CWE-264 Bypass B
+88 CWE-189 DoS Mem. Corr. A
+91 CWE-189 DoS Mem. Corr. A
+107 CWE-264 Bypass A
+864 CWE-119 DoS Overflow A
+865 CWE-79 XSS B
+871 CVE-2015-8852 Http R.Spl. A
+893 CWE-200 Bypass + Info A
+919 CWE-22 Dir. Trav. A
+925 CWE-22 Dir. Trav. A
+1245 CWE-787 Mem. Corr. B
+2237 CVE-2015-8852 Http R.Spl A

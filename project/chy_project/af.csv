@@ -1,0 +1,4 @@
+contract,found vulnerablities,code_coverage,branch_coverage
+./chy_data/regen_return_af/token-with-backdoor.sol,"[{""type"":""Assertion failure"",""txs"":[{""airdrop()"":{""argtype"":[],""argdata"":[]}},{""airdrop()"":{""argtype"":[],""argdata"":[]}},{""backdoor()"":{""argtype"":[],""argdata"":[]}},{""airdrop()"":{""argtype"":[],""argdata"":[]}},{""airdrop()"":{""argtype"":[],""argdata"":[]}},{""backdoor()"":{""argtype"":[],""argdata"":[]}},{""test_invariants()"":{""argtype"":[],""argdata"":[]}}],""pc"":407}]",99.60629921259843,96.15384615384616
+./chy_data/regen_return_af/sha_of_sha_collision.sol,[],99.38837920489296,87.5
+./chy_data/regen_return_af/gas_model.sol,"[{""type"":""Assertion failure"",""txs"":[{""check()"":{""argtype"":[],""argdata"":[]}}],""pc"":139}]",68.42105263157895,75

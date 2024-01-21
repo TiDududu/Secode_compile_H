@@ -1,0 +1,28 @@
+Primary functionality: This contract is for a token called HeavenlyHoundCoin and includes functionalities for transferring tokens, approving transfers, burning tokens, minting tokens, and freezing accounts.
+
+1. safeMul, Safely multiplies two numbers and prevents overflow.
+2. safeDiv, Safely divides two numbers and prevents division by zero.
+3. safeSub, Safely subtracts one number from another and prevents underflow.
+4. safeAdd, Safely adds two numbers and prevents overflow.
+
+5. HeavenlyHoundCoin, Initializes the token with the specified initial supply, name, symbol, and decimal units.
+
+6. setLock, Allows the owner to set a lock to prevent further transfers.
+
+7. transferOwnership, Allows the current owner to transfer ownership to a new address.
+
+8. _transfer, Internal function to transfer tokens from one address to another.
+
+9. transfer, Allows users to transfer tokens to another address.
+
+10. transferFrom, Allows a third party to transfer tokens from one address to another.
+
+11. approve, Allows the owner to approve a third party to spend a certain amount of tokens from the owner's address.
+
+12. burn, Allows the owner to burn a specific amount of their own tokens.
+
+13. burnFrom, Allows the owner to burn a specific amount of tokens from another address, given the necessary allowance.
+
+14. mintToken, Allows the owner to mint new tokens and assign them to a target address.
+
+15. freezeAccount, Allows the owner to freeze or unfreeze a specific account.

@@ -1,0 +1,5 @@
+Primary functionality: Split incoming Ether and Ether Classic (ETC) based on whether the contract is on the forked chain or not.
+
+1. split, This function splits incoming Ether and Ether Classic (ETC) based on whether the contract is on the forked chain or not. If on the forked chain, it sends Ether to the ethAddress. If not on the forked chain, it sends ETC to etcAddress after deducting a fee.
+2. fallback function, This function rejects deposits to the contract.
+3. AmIOnTheFork, This is an oracle contract that provides information about whether the current contract is on the forked chain or not.

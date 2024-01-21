@@ -1,0 +1,18 @@
+Primary functionality: This contract implements a token system with the ability to transfer tokens, approve spending, and handle ownership and pricing functionalities.
+
+1. owned, Constructor function to set the owner of the contract.
+2. onlyOwner, Modifier to restrict access to functions to only the owner of the contract.
+3. transferOwnership, Function to transfer ownership of the contract to a new address.
+4. tokenRecipient, Interface for a contract to receive approval for token transfer.
+5. token, Constructor function to initialize the token with initial supply, name, decimals, and symbol.
+6. transfer, Function to transfer tokens from the sender's account to another account.
+7. approve, Function to allow another address to spend tokens on the sender's behalf.
+8. approveAndCall, Function to approve spending and notify the approved contract in a single transaction.
+9. transferFrom, Function to transfer tokens from one address to another, with approval.
+10. fallback, Fallback function to prevent accidental sending of ether.
+11. MyBoToken, Constructor function to initialize the MyBoToken with initial supply, name, decimals, and symbol.
+12. sellPrice, Public variable to store the selling price of the token.
+13. buyPrice, Public variable to store the buying price of the token.
+14. frozenAccount, Mapping to store the frozen status of accounts.
+15. FrozenFunds, Event to notify clients about frozen accounts.
+16. Burn, Event to notify clients about the amount of tokens burnt.

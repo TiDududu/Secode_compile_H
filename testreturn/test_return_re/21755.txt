@@ -1,0 +1,10 @@
+Primary functionality: The contract allows users to deposit and withdraw funds, with a minimum balance requirement and a time lock feature.
+
+1. SetMinSum, sets the minimum required balance for an account.
+2. SetLogFile, sets the address of the log file contract.
+3. Initialized, marks the contract as initialized.
+4. Put, allows users to deposit funds with an optional time lock.
+5. Collect, allows users to withdraw funds if the balance meets the minimum requirement and the time lock has expired.
+6. Fallback function, allows users to deposit funds with no time lock.
+
+Additionally, there is a separate Log contract that stores messages containing sender address, data, value, and time. The AddMessage function is used to add a new message to the log.

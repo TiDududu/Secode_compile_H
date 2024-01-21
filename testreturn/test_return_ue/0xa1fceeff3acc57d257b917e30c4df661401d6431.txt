@@ -1,0 +1,5 @@
+Primary functionality: Perform an airdrop of tokens to multiple addresses.
+
+1. AirDropContract, Constructor function to initialize the contract.
+2. validAddress, Modifier to check if the address is valid.
+3. transfer, Function to transfer tokens to multiple addresses, with the ability to specify the contract address, recipient addresses, and corresponding token values. It ensures the validity of the contract address and then iterates through the recipient addresses to perform the token transfer using low-level call to the contract's transferFrom function.

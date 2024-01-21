@@ -1,0 +1,14 @@
+Primary functionality: This contract manages a dividend distribution system for a set of schemes and vaults.
+
+1. buyShares, Allows the purchase of shares in a scheme by a given owner, with a specified number of shares and value.
+2. flushVault, Updates the vault by adding gains to the vault's value and mask.
+3. withdrawVault, Allows the owner to withdraw their earnings from the vault.
+4. creditVault, Credits the vault with a specified value.
+5. gainsOfVault, Calculates the gains of a vault for a given owner and scheme.
+6. valueOfVault, Retrieves the total value of a vault for a given owner and scheme.
+7. balanceOfVault, Retrieves the balance of a vault for a given owner and scheme.
+8. sharesOfVault, Retrieves the number of shares held in a vault for a given owner and scheme.
+9. valueOfScheme, Retrieves the total value of a scheme.
+10. sharesOfScheme, Retrieves the total number of shares in a scheme.
+
+Additionally, the Utils library provides functions for calculating ticket prices based on certain parameters.

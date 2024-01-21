@@ -1,0 +1,17 @@
+Primary functionality: This Solidity contract is designed to create an ERC20 token with the ability to mint new tokens, transfer tokens between addresses, and approve spending of tokens by another address.
+
+1. ERC20Basic - This is an interface defining the basic ERC20 token functions, including totalSupply, balanceOf, and transfer.
+
+2. SafeMath Library - A library providing safe mathematical operations to prevent overflows and underflows in arithmetic operations.
+
+3. BasicToken - A contract implementing the ERC20Basic interface and using SafeMath for arithmetic operations. It includes the transfer and balanceOf functions for transferring tokens and checking balances.
+
+4. ERC20 - An interface extending ERC20Basic with additional functions for approving spending and allowing an address to spend tokens on behalf of another address.
+
+5. StandardToken - A contract implementing the ERC20 interface and BasicToken. It includes the transferFrom, approve, allowance, increaseApproval, and decreaseApproval functions for handling token allowances and approvals.
+
+6. Ownable - A contract defining ownership functionality, allowing the contract owner to transfer ownership to another address.
+
+7. MintableToken - A contract implementing the minting functionality, allowing the owner to mint new tokens and finish minting.
+
+You need to deploy this contract to create an ERC20 token with minting capabilities and ownership functionality.

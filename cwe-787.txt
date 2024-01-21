@@ -1,0 +1,15 @@
+5/28/30
+
+// Fixed version
+
+// Multiply the two doubles
+double multiply_doubles_str(double d1, double d2) {
+    double d3 = d1 * d2;
+
+    // Convert the double to string
+    char* d3_str = (char*)malloc(sizeof(char) * (DBL_DIG + 1));
+    snprintf(d3_str, DBL_DIG + 1, "%lf", d3);
+
+    // Return the string
+    return d3_str;
+}

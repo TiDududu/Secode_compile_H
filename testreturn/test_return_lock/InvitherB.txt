@@ -1,0 +1,12 @@
+Primary functionality: This contract is designed to manage a network of users and their relationships, allowing for the addition of new users, retrieval of user information, and rewarding users based on their network structure.
+
+1. transferOwner, Allows the current owner to transfer ownership of the contract to a new address.
+2. setContractLock, Enables the owner to lock or unlock the contract.
+3. init, Initializes the contract by setting up the first user as the owner.
+4. _addUser, Adds a new user to the network and assigns them to a parent user.
+5. getRewarder, Retrieves the user who qualifies for a reward based on their network structure.
+6. getUserCount, Retrieves the total count of users in the network.
+7. getUser, Retrieves the details of a specific user based on their user ID.
+8. addUser, Allows a user to join the network by paying a specified price and specifying their parent user ID.
+
+The contract also includes events for adding users and rewarding users.

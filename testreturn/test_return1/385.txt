@@ -1,0 +1,11 @@
+Primary functionality: The contract allows for the creation of a token and facilitates the transfer of tokens, along with the ability to manage donations and ownership.
+
+1. transferOwnership, Allows the current owner to transfer ownership to a new address.
+2. constructor, Initializes the token with predefined values and assigns the total supply to the owner's balance.
+3. _transfer, Internal function to transfer tokens from one address to another.
+4. transfer, Allows the owner to transfer tokens to a specified address.
+5. disableDonation, Allows the owner to close the donation feature.
+6. enableDonation, Allows the owner to reopen the donation feature.
+7. setDescription, Allows the owner to update the description of the token.
+8. fallback function, Allows users to make donations and receive tokens in return.
+9. safeWithdrawal, Allows the owner to withdraw Ether from the contract.

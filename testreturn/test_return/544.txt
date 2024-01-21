@@ -1,0 +1,9 @@
+Primary functionality: This Solidity contract allows for the creation and management of a custom token, "HNContract".
+
+1. balanceOf, returns the balance of a specified address.
+2. transfer, allows for the transfer of tokens to a specified address.
+3. transferFrom, allows for the transfer of tokens from one address to another, with the appropriate approval.
+4. approve, allows for the approval of a specified amount of tokens to be spent by a designated spender.
+5. allowance, returns the remaining number of tokens that a spender is allowed to spend on behalf of an owner.
+6. inflat, allows the contract creator to increase the total supply of tokens.
+7. burn, allows for the destruction of a specified amount of tokens by the owner.

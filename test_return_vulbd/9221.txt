@@ -1,0 +1,9 @@
+Primary functionality: This contract is a simple betting contract where users can bet 1 ether and if the random number generated is 1, they receive 2 ether in return.
+
+1. bet, Allows users to place a bet by sending 1 ether. If the random number generated is 1 and the contract is not locked, the better receives 2 ether in return.
+2. lock, Allows the game owner to lock the betting process.
+3. unlock, Allows the game owner to unlock the betting process.
+4. own, Allows the game owner to transfer ownership to another address.
+5. releaseFunds, Allows the game owner to release funds from the contract to themselves.
+6. random, Generates a random number based on block timestamp and difficulty.
+7. fallback function, Calls the bet function when ether is sent to the contract.

@@ -1,0 +1,11 @@
+Primary functionality: Trading tokens between users and with a manager
+1. transfer, Manages the transfer of tokens from the user to another address and triggers the Transfer event
+2. transferFrom, Manages the transfer of tokens from one address to another on behalf of the owner and triggers the Transfer event
+3. approve, Approves the passed address to spend the specified amount of tokens on behalf of the owner and triggers the Approval event
+4. batchTransfer, Allows the transfer of tokens to multiple receivers at once
+5. Trade, Handles the trading of tokens between users and triggers the deal event
+6. Shark, Initializes the token attributes and assigns the total supply to the contract owner
+7. changePrice, Changes the price of the token
+8. Buy, Allows users to buy tokens by sending Ethereum to the contract address
+
+The primary functionality revolves around trading tokens between users and with a manager. This includes functionality for transferring tokens, approving spending, batch transfers, and trading between users and a manager. Users can also buy tokens using Ethereum.

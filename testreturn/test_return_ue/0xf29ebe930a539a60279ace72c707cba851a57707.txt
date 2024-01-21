@@ -1,0 +1,4 @@
+Primary functionality: This contract allows the owner to call the function "go" to send Ether to the address specified in the "target" variable and then transfer the remaining balance to the owner's address.
+
+1. go, This function is payable and allows the owner to send Ether to the address specified in the "target" variable using the call function. After the call, it transfers the remaining balance to the owner's address.
+2. fallback, This function is payable and serves as the fallback function to receive Ether.

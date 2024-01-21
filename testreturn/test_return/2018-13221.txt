@@ -1,0 +1,6 @@
+Primary functionality: The contract defines an ERC20 token with a transaction library, stores the balance for the sender and the receiver. It allows approved addresses to transfer tokens on its behalf.
+
+1. transfer: It reduces the sender's token balance and increases the recipient's token balance, following which it emits a transfer event.
+2. balanceOf: It returns the balance of the `_owner` address.
+3. transferFrom: It allows a _spender to manage tokens on behalf of the token owner, reducing allowance based on the token value. After transfer, it emits a transfer event.
+4. approve: Allows `_spender` to withdraw from the approver¡¯s account multiple times, updating the allowance value.

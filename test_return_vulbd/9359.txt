@@ -1,0 +1,13 @@
+Primary functionality: Manage lists of affiliates and investors with different roles.
+
+1. set, Allows the owner to set the start and end timestamps for an affiliate.
+2. get, Retrieves the start and end timestamps for a given affiliate.
+3. inListAsOf, Checks if an address is in the affiliate list as of a specific time.
+4. inList, Checks if an address is in the investor list.
+5. addAddress, Adds an address to the investor list with a specified role.
+6. getRole, Retrieves the role of a given address from the investor list.
+7. hasRole, Checks if an address has a specific role in the investor list.
+8. changeOwner, Allows the owner to change the contract owner.
+9. acceptOwnership, Allows the new owner to accept ownership of the contract.
+
+The AffiliateList contract manages affiliates by allowing the owner to set their start and end timestamps, and check if an address is in the affiliate list as of a specific time. The InvestorList contract manages investors by allowing the owner to add addresses with specific roles, retrieve the role of an address, and check if an address has a specific role. Both contracts inherit from the Ownable contract, which provides functionality for changing ownership of the contract.

@@ -1,0 +1,17 @@
+Primary functionality: The contract implements a token ERC20 with the ability to transfer tokens, approve spending, burn tokens, and change ownership.
+
+1. owned, Constructor; - Initializes the owner of the contract.
+2. owned, transferOwnership; - Allows the owner to transfer ownership of the contract to a new address.
+3. owned, destruct; - Allows the owner to destroy the contract and send any remaining funds to the owner's address.
+4. TokenERC20, Constructor; - Initializes the token with a total supply, name, and symbol.
+5. TokenERC20, _transfer; - Internal function to transfer tokens from one address to another.
+6. TokenERC20, transfer; - Allows users to transfer tokens to another address.
+7. TokenERC20, transferFrom; - Allows for a delegated transfer of tokens from one address to another.
+8. TokenERC20, approve; - Allows the owner to approve another address to spend tokens on their behalf.
+9. TokenERC20, approveAndCall; - Allows the owner to approve another address to spend tokens and then call the recipient's contract.
+10. TokenERC20, burn; - Allows a user to burn a specific amount of their own tokens.
+11. TokenERC20, burnFrom; - Allows for a delegated burning of tokens from one address.
+12. GlobalGoldCashToken, Constructor; - Initializes the token with a total supply, name, and symbol.
+13. GlobalGoldCashToken, _transfer; - Internal function to transfer tokens from one address to another.
+14. GlobalGoldCashToken, freezeAccount; - Allows the owner to freeze or unfreeze a specific account.
+15. GlobalGoldCashToken, setMinBalance; - Allows the owner to set a minimum balance required for accounts to perform transactions.

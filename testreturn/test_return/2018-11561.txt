@@ -1,0 +1,10 @@
+Primary functionality: This contract is for managing and transferring tokens.
+
+1. totalSupply, returns the total amount of tokens.
+2. balanceOf, returns the balance of tokens for a specific address.
+3. transfer, sends a specified amount of tokens to a recipient from the sender's address.
+4. transferFrom, sends a specified amount of tokens from one address to another, given the approval of the sender.
+5. approve, approves an address to spend a specified amount of tokens from the sender's address.
+6. allowance, returns the remaining amount of tokens that an address is allowed to spend.
+
+The StandardToken contract implements the transfer and transferFrom functions to allow for the transfer of tokens between addresses. It also includes a distributeToken function, which distributes a specified amount of tokens to a list of addresses.
