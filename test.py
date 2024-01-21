@@ -2,14 +2,11 @@ from openai import OpenAI
 import os
 import csv
 import time
+from dotenv import load_dotenv
 
-client = OpenAI(
-    # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="sk-inFcgSc24xxZ99Pf8uTXk6ka6ftaeDeu92Y7kVSZEmNKDJig",
-    # api_key="sk-FlSHXKP3VW5ydnzVGYEhwWQKUs5N6OsVUkjsoDppVhl0bFDm",
-    base_url="https://api.chatanywhere.tech/v1"
-)
-
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=api_key, base_url="https://api.chatanywhere.tech/v1")
 
 def gpt_35_api(messages: list):
     """为提供的对话消息创建新的回答
